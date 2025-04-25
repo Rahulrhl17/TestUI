@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TestUI" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.TestUI" parent="Base.Theme.TestUI" />
+
+    <style name="OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 600</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="SolidButton" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 600</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FirstTabShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="WorkSansLight">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 300</item>
+    </style>
+
+    <style name="WorkSansRegular">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 400</item>
+    </style>
+
+    <style name="WorkSansMedium">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 500</item>
+    </style>
+
+    <style name="WorkSansSemiBold">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 600</item>
+    </style>
+
+    <style name="WorkSansBold">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 700</item>
+    </style>
+
+    <style name="WorkSansExtraBold">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 800</item>
+    </style>
+
+    <style name="WorkSansBlack">
+        <item name="android:fontFamily">@font/work_sans_variable_weight</item>
+        <item name="fontVariationSettings">'wght' 900</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="overlay_black">#54000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="off_white">#F5F7F9</color>
+    <color name="blue">#414099</color>
+    <color name="red">#F44336</color>
+    <color name="purple_700">#4B3F92</color>
+    <color name="primary">#3D3CCC</color>
+    <color name="finoBlue">#48308A</color>
+    <color name="secondaryTextColor">#A59AC6</color>
+    <color name="almostWhite">#EDE8FF</color>
+    <color name="gray">#4F4F4F</color>
+    <color name="purple">#955EA3</color>
+</resources>
