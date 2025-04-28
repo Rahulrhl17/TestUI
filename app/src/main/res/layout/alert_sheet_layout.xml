@@ -8,7 +8,7 @@
     >
 
     <ImageView
-        android:id="@+id/waring_image"
+        android:id="@+id/alert_image"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
-        android:id="@+id/warning_text"
+        android:id="@+id/alert_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -27,13 +27,13 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         android:text="VPN Detected!"
-        app:layout_constraintTop_toBottomOf="@id/waring_image"
+        app:layout_constraintTop_toBottomOf="@id/alert_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         style="@style/WorkSansSemiBold"/>
 
     <TextView
-        android:id="@+id/warning_subtext"
+        android:id="@+id/alert_subtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
@@ -42,7 +42,7 @@
         android:textSize="16sp"
         android:layout_marginHorizontal="40dp"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/warning_text"
+        app:layout_constraintTop_toBottomOf="@id/alert_text"
         app:layout_constraintBottom_toTopOf="@+id/okay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/warning_subtext"
+        app:layout_constraintTop_toBottomOf="@id/alert_subtext"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:textSize="16sp"
