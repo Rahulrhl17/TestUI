@@ -6,15 +6,21 @@
     <color name="off_white">#F5F7F9</color>
     <color name="blue">#414099</color>
     <color name="red">#F44336</color>
+    <color name="caretRed">#ED1B2F</color>
     <color name="purple_700">#4B3F92</color>
     <color name="primary">#3D3CCC</color>
+    <color name="primaryDisabled">#9999E2</color>
     <color name="finoBlue">#414099</color>
     <color name="finoLightBlue">#6060B5</color>
     <color name="secondaryTextColor">#A59AC6</color>
     <color name="almostWhite">#EDE8FF</color>
     <color name="gray">#4F4F4F</color>
+    <color name="gray2">#828282</color>
+    <color name="lightGray">#999999</color>
     <color name="lightestGray">#EDEFF1</color>
     <color name="purple">#955EA3</color>
+    <color name="lilac">#D5C9FF</color>
     <color name="lightGreen">#8EFF72</color>
     <color name="lightestGreen">#DEFFD6</color>
+    <color name="chipStrokeColor">#E9E2FF</color>
 </resources>

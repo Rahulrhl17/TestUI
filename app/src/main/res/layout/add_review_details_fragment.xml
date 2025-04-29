@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansSemiBold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="visible"
+                        android:layout_alignParentStart="true"
+                        android:text="Personal Details"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_down"
+                        app:tint="@color/caretRed"
+                        android:rotation="180"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/personal_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="14dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:shapeAppearanceOverlay="@style/CircleImageView"
+                            android:scaleType="centerInside"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/placeholder_image"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansSemiBold"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:visibility="visible"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:text="Alex George"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Gender"
+                        android:layout_marginTop="14dp"/>
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:text="Male"
+                        android:paddingStart="10dp"
+                        android:textSize="16sp"
+                        app:backgroundTint="@color/gray2"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Nationality"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/nationality"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:text="Indian"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        app:backgroundTint="@color/gray2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Father's / Husband's name"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/father_husband_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:text="Manish Verma"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        app:backgroundTint="@color/gray2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Permanent address as per Aadhaar"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/permanant_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:text="S/o A. B. , Near ABC Store, taleigao, North Goa, India 403002"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        app:backgroundTint="@color/gray2"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansRegular"
+                            android:textColor="@color/gray2"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:layout_alignParentStart="true"
+                            android:text="Communication address"
+                            />
+
+                        <ImageView
+                            android:id="@+id/edit_communication_address_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_edit"/>
+
+                    </RelativeLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/communication_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:text="Same as permanent address"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        app:backgroundTint="@color/gray2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="PAN Number"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/pan_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:text="FXIPK1245"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:paddingStart="10dp"
+                        app:backgroundTint="@color/gray2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Name as per PAN*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/name_as_per_pan"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Alex Maximillian George"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="DOB*"
+                        android:layout_marginTop="14dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/date_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/month_spinner"
+                            android:entries="@array/date_array"
+                            style="@style/SpinnerStyle"
+                            android:theme="@style/SpinnerStyle"
+                            android:layout_marginEnd="6dp"/>
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/month_spinner"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            app:layout_constraintStart_toEndOf="@id/date_spinner"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/year_text"
+                            android:entries="@array/month_array"
+                            style="@style/SpinnerStyle"
+                            android:theme="@style/SpinnerStyle"
+                            android:layout_marginEnd="6dp"/>
+
+                        <EditText
+                            android:id="@+id/year_text"
+                            android:layout_width="0dp"
+                            android:layout_height="52dp"
+                            app:layout_constraintStart_toEndOf="@id/month_spinner"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:background="@drawable/text_field_bg"
+                            style="@style/WorkSansSemiBold"
+                            android:textColor="@color/black"
+                            android:text="1996"
+                            android:paddingStart="10dp"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Mother's maiden name*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/mother_maiden_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Seema Paul"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray2"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Marital Status*"
+                        android:layout_marginTop="14dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/marital_status_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:entries="@array/marital_status"
+                        style="@style/SpinnerStyle"
+                        android:theme="@style/SpinnerStyle"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/save_personal_details"
+                        style="@style/SolidButtonDisabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Save and proceed"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansSemiBold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="visible"
+                        android:layout_alignParentStart="true"
+                        android:text="Professional Details"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_down"
+                        app:tint="@color/caretRed"
+                        />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/professional_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Education qualification*"
+                        android:layout_marginTop="14dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/education_qualification_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:entries="@array/education_qualification"
+                        style="@style/SpinnerStyle"
+                        android:theme="@style/SpinnerStyle"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Occupation*"
+                        android:layout_marginTop="14dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/occupation_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:entries="@array/occupation"
+                        style="@style/SpinnerStyle"
+                        android:theme="@style/SpinnerStyle"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Annual Income*"
+                        android:layout_marginTop="14dp"/>
+
+                   <com.google.android.material.chip.ChipGroup
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       app:chipSpacingVertical="-5dp"
+                       app:singleSelection="true"
+                       app:selectionRequired="true"
+                       >
+
+                       <com.google.android.material.chip.Chip
+                           android:id="@+id/zero_five_lakhs"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:chipCornerRadius="40dp"
+                           android:textColor="@color/black"
+                           android:textAppearance="@style/WorkSansRegular"
+                           android:text="0-5 lakhs"
+                           android:textSize="14sp"
+                           app:chipBackgroundColor="@color/white"
+                           app:chipStrokeColor="@color/chipStrokeColor"
+                           />
+                       <com.google.android.material.chip.Chip
+                           android:id="@+id/five_ten_lakhs"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:chipCornerRadius="40dp"
+                           android:textColor="@color/black"
+                           android:textAppearance="@style/WorkSansRegular"
+                           android:text="5-10 lakhs"
+                           android:textSize="14sp"
+                           app:chipBackgroundColor="@color/white"
+                           app:chipStrokeColor="@color/chipStrokeColor"
+                           />
+
+                       <com.google.android.material.chip.Chip
+                           android:id="@+id/ten_twenty_lakhs"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:chipCornerRadius="40dp"
+                           android:textColor="@color/black"
+                           android:textAppearance="@style/WorkSansRegular"
+                           android:text="10-20 lakhs"
+                           android:textSize="14sp"
+                           app:chipBackgroundColor="@color/white"
+                           app:chipStrokeColor="@color/chipStrokeColor"
+                           />
+
+                       <com.google.android.material.chip.Chip
+                           android:id="@+id/twenty_fifty_lakhs"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:chipCornerRadius="40dp"
+                           android:textColor="@color/black"
+                           android:textAppearance="@style/WorkSansRegular"
+                           android:text="20-50 lakhs"
+                           android:textSize="14sp"
+                           app:chipBackgroundColor="@color/white"
+                           app:chipStrokeColor="@color/chipStrokeColor"
+                           />
+
+                       <com.google.android.material.chip.Chip
+                           android:id="@+id/above_fifty_lakhs"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           app:chipCornerRadius="40dp"
+                           android:textColor="@color/black"
+                           android:textAppearance="@style/WorkSansRegular"
+                           android:text="Above 50 lakhs"
+                           android:textSize="14sp"
+                           app:chipBackgroundColor="@color/white"
+                           app:chipStrokeColor="@color/chipStrokeColor"
+                           />
+
+
+                   </com.google.android.material.chip.ChipGroup>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/save_professional_details"
+                        style="@style/SolidButtonDisabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Save and proceed"
+                        android:textSize="16sp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansSemiBold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:visibility="visible"
+                        android:layout_alignParentStart="true"
+                        android:text="Nominee details (optional)"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_down"
+                        app:tint="@color/caretRed"
+                        />
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/nominee_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="As per RBI guidelines, it is recommended to add a nominee for financial security"
+                        android:layout_marginTop="4dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Nominee name*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/nominee_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:hint="Enter nominee's name"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Date of birth*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/nominee_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:hint="DD/MM/YYYY"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:paddingStart="10dp"
+                        android:drawableEnd="@drawable/ic_calendar"
+                        android:drawableTint="@color/finoBlue"
+                        android:paddingEnd="8dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Relationship with account holder*"
+                        android:layout_marginTop="14dp"/>
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/relationship_acc_holder_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:entries="@array/acc_holder_relationship"
+                        style="@style/SpinnerStyle"
+                        android:theme="@style/SpinnerStyle"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/WorkSansRegular"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:buttonTint="@color/primary"
+                        app:checkedState="checked"
+                        android:text="Nominee address same as customer address"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="Nominee Address*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/nominee_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:inputType="textMultiLine"
+                        android:text="OB-155, Kamat Apartment, Tonca, Panaji, North Goa, India, 400019 "
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/guardian_details_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansSemiBold"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:visibility="visible"
+                            android:text="Guardian Details"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansRegular"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:text="Guardian Name*"
+                            android:layout_marginTop="14dp"/>
+
+                        <EditText
+                            android:id="@+id/guardian_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:background="@drawable/text_field_bg"
+                            android:textAppearance="@style/WorkSansSemiBold"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:text="Raj"
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansRegular"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:text="Relation with nominee*"
+                            android:layout_marginTop="14dp"/>
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/relationship_nominee_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:entries="@array/nominee_relationship"
+                            style="@style/SpinnerStyle"
+                            android:theme="@style/SpinnerStyle"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansRegular"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:text="Guardian DOB*"
+                            android:layout_marginTop="14dp"/>
+
+                        <EditText
+                            android:id="@+id/guardian_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:background="@drawable/text_field_bg"
+                            android:textAppearance="@style/WorkSansSemiBold"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:hint="DD/MM/YYYY"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:paddingStart="10dp"
+                            android:drawableEnd="@drawable/ic_calendar"
+                            android:drawableTint="@color/finoBlue"
+                            android:paddingEnd="8dp"
+                            android:layout_marginTop="8dp"/>
+
+                        <com.google.android.material.checkbox.MaterialCheckBox
+                            android:layout_width="wrap_content"
+                            android:textAppearance="@style/WorkSansRegular"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            app:buttonTint="@color/primary"
+                            app:checkedState="checked"
+                            android:text="Guardian address same as customer address"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/WorkSansRegular"
+                            android:textColor="@color/gray"
+                            android:textSize="14sp"
+                            android:visibility="visible"
+                            android:text="Guardian Address*"
+                            android:layout_marginTop="14dp"/>
+
+                        <EditText
+                            android:id="@+id/guardian_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:background="@drawable/text_field_bg"
+                            android:textAppearance="@style/WorkSansSemiBold"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:inputType="textMultiLine"
+                            android:text="OB-155, Kamat Apartment, Tonca, Panaji, North Goa, India, 400019 "
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="8dp"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="PIN code*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                        android:text="400019"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="City*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:textColor="@color/gray2"
+                        android:text="Panaji"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:text="State/Union territory*"
+                        android:layout_marginTop="14dp"/>
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textSize="16sp"
+                        android:enabled="false"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:textColor="@color/gray2"
+                        android:text="Goa"
+                        android:paddingStart="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/skip_nominee_details"
+                            style="@style/OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="54dp"
+                            android:text="Skip for now"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginEnd="4dp"
+                            app:layout_constraintEnd_toStartOf="@id/save_nominee_details"
+                            android:textSize="16sp"
+                            />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/save_nominee_details"
+                            style="@style/SolidButton"
+                            android:layout_width="0dp"
+                            android:layout_height="54dp"
+                            android:text="Proceed"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:layout_marginStart="4dp"
+                            app:layout_constraintStart_toEndOf="@id/skip_nominee_details"
+                            android:textSize="16sp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
