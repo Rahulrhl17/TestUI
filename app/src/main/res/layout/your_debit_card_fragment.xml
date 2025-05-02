@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansSemiBold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                android:layout_marginHorizontal="20dp"
+                android:text="Your Debit Card"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/gray"
+                android:textSize="13sp"
+                android:layout_marginHorizontal="20dp"
+                android:text="Use a Fino RuPay Platinum debit card to make smart purchases and to earn rewards on the go"
+                style="@style/WorkSansRegular"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/debit_card_image"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:src="@drawable/debit_card_bg"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/cardholder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="ALEX GEORGE"
+                    android:elevation="5dp"
+                    app:layout_constraintBottom_toBottomOf="@id/debit_card_image"
+                    app:layout_constraintStart_toStartOf="@id/debit_card_image"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginBottom="22dp"
+                    style="@style/Baloo2Medium"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansSemiBold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:text="FinoPay Digital Savings Account"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/debit_card_features_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:text="Select name on card*"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="14dp"/>
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/debit_card_name_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:entries="@array/debit_card_name"
+                style="@style/SpinnerStyle"
+                android:theme="@style/SpinnerStyle"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/proceed"
+                style="@style/SolidButtonDisabled"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Proceed"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="10dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</ScrollView>

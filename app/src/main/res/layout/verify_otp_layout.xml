@@ -54,29 +54,13 @@
                 android:layout_marginTop="4dp"
                 android:text="Enter the OTP sent to +91 96568 54321"/>
 
-            <com.kevinschildhorn.otpview.OTPView
+            <View
+                android:id="@+id/otpView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                app:otp_itemWidth="50dp"
-                app:otp_itemHeight="52dp"
-                app:otp_itemCount="4"
-                app:otp_Font="@style/WorkSansRegular"
-                app:otp_filledFont="@style/WorkSansRegular"
-                app:otp_highlightedFont="@style/WorkSansRegular"
-                app:otp_filledTextColor="@color/finoBlue"
-                app:otp_highlightedTextColor="@color/finoBlue"
-                app:otp_textColor="@color/finoBlue"
-                app:otp_backgroundImage="@drawable/otp_view_bg"
-                app:otp_filledBackgroundImage="@drawable/otp_view_bg"
-                app:otp_highlightedBackgroundImage="@drawable/otp_view_bg"
-                app:otp_ispassword="true"
-                app:otp_marginBetween="20dp"
-                app:otp_underscoreCursor="true"
-                android:textAlignment="center"
-                app:otp_showCursor="true"
-                app:otp_cursorColor="@color/gray"
+
                 />
             <RelativeLayout
                 android:layout_width="match_parent"

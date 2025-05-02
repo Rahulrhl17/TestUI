@@ -67,4 +67,7 @@
     <string-array name="nominee_relationship">
         <item>Select relationship</item>
     </string-array>
+    <string-array name="debit_card_name">
+        <item>Select</item>
+    </string-array>
 </resources>

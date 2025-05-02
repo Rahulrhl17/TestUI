@@ -41,10 +41,10 @@
         <item name="android:textColor">@color/lightGray</item>
     </style>
 
-    <style name="FirstTabShape" parent="">
+    <style name="BottomSheetCorners" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSizeTopLeft">12dp</item>
-        <item name="cornerSizeBottomLeft">12dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
         <item name="cornerSizeTopRight">0dp</item>
         <item name="cornerSizeBottomRight">0dp</item>
     </style>
@@ -82,6 +82,10 @@
     <style name="WorkSansBlack">
         <item name="android:fontFamily">@font/work_sans_variable_weight</item>
         <item name="fontVariationSettings">'wght' 900</item>
+    </style>
+
+    <style name="Baloo2Medium">
+        <item name="android:fontFamily">@font/baloo2_medium</item>
     </style>
 
 
