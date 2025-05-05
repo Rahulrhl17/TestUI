@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">TestUI</string>
+    <string name="confirm_details_before_proceeding">Confirm details before proceeding</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="representative_code">Representative Code</string>
+    <string name="enter_fino_employee_or_merchant_code">Enter FINO employee or merchant code</string>
+    <string name="apply">Apply</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
     <string-array name="date_array">
         <item>Date</item>
         <item>01</item>
@@ -70,4 +77,40 @@
     <string-array name="debit_card_name">
         <item>Select</item>
     </string-array>
+    <string name="terms_condition_description">These terms and conditions ("Terms and Conditions") apply to and regulate for the usage of the Mutual Fund Services offered by Finwizard Technology Private Limited (FISDOM/Third Party/Mutual Fund Distributor/Intermediary) using Fino Payments Bank (“the Bank”) platform  https://www.finobank.com (“website”) or Bank’s mobile application FinoPay (“App”).
+
+By completing the sign-up process for availing any of the Services, you are deemed to have expressly read, understood and accepted each and every specific Terms and Conditions mentioned herein, along with the Fisdom – MF Terms of Service www.fisdom.com/mutual-fund-terms-of-service/ along with General Terms and Conditions specified on Mutual Fund Distributor website www.fisdom.com and amended
+from time to time.
+
+In this agreement, “We”, “Us” or “Our” refers to the Fino Payments Bank. “Third Party”, “Mutual Fund Distributor” or “Intermediary” refers to Fisdom and “You” or “Your” refers to the individuals using the Bank’s platform to access Mutual Fund Services
+provided by Fisdom
+
+By Proceeding with the Use of the Services, you agree as follows:
+
+You agree and understand that the Services provided herein are only to avail Third Party Product - Mutual Fund services offered by Fisdom accessing Bank’s platform for its customers.
+        You also agree and understand that The Bank have arrangement with Fisdom to provide products or services.  In order to use these products or services, you shall be required to explicitly agree to terms and conditions of Fisdom and its privacy policy available on their platform.  The acceptance of Fisdom Terms and Conditions by you for using the product or services are between you and Fisdom only.  The Bank is not liable for any actions or inactions of Fisdom.
+
+That, Fisdom is an AMFI Registered Mutual Fund Distributor and the Bank is only facilitating you to access Fisdom services at your sole discretion by using the Bank’s Platform.
+
+Fino Bank is in referral tie up (non- risk participation) for digital mutual fund platform with FISDOM (Finwizard Technology Pvt Ltd). Through this tie up, we provide an opportunity to our customers to diversify their investment portfolios, depending on their requirements and risk appetite.  Fino Bank makes no warranties or representations, express or implied, on products offered through the platform. It accepts no liability for any damages or losses, however caused, in connection with the use of, or on the reliance of its product or related services.
+
+Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of the
+</string>
+    <string name="discover_finopay_services">Discover FinoPay services</string>
+    <string name="explore_more_with_fino">Explore more with Fino</string>
+    <string name="eligibility_criteria">Eligibility Criteria</string>
+    <string name="occupation_type">Occupation type</string>
+    <string name="minimum_monthly_salary">Minimum monthly salary</string>
+    <string name="minimum_credit_score">Minimum Credit Score</string>
+    <string name="rate_of_interest">Rate of Interest</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="loan_processing_fees">Loan Processing Fees</string>
+    <string name="tenure">Tenure</string>
+    <string name="proceed">Proceed</string>
+    <string name="read_agreed_terms_condtion">By proceeding futher, I confirm to have read and agreed to the Terms and Conditions.</string>
+    <string name="age">Age</string>
+    <string name="loan_features">Loan Features</string>
+    <string name="brands">Brands</string>
+    <string name="loan_to_value">Loan-to-Value</string>
+
 </resources>
