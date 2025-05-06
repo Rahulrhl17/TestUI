@@ -31,5 +31,6 @@
     <color name="text_hint_color">#BDBDBD</color>
     <color name="grey3">#4E4E4E</color>
     <color name="grey4">#666666</color>
-
+    <color name="stroke">#C0C0C0</color>
+    <color name="hint_color">#A7A7A7</color>
 </resources>

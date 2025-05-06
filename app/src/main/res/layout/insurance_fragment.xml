@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+<include layout="@layout/header_layout"
+    android:id="@+id/headerLayout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_37"
+        android:layout_marginEnd="@dimen/dimen_37"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:orientation="vertical"
+       >
+<ImageView
+    android:id="@+id/banner"
+    android:layout_width="match_parent"
+    android:layout_height="315dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/placeholder_image"
+    android:gravity="center"/>
+    <TextView
+        android:id="@+id/insuranceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/WorkSansSemiBold"
+        tools:text="Vehicle Insurance (Private Vehicles only)"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/text_colors"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/vehicleNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/WorkSansRegular"
+            android:text="@string/vehicle_number"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/dark_grey"
+            android:layout_marginTop="@dimen/dimen_10"
+            />
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/text_field_bg"
+            style="@style/WorkSansSemiBold"
+            android:hint="@string/e_g_dl12b34768"
+            android:textSize="@dimen/text_14"
+            android:paddingStart="10dp"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:textColorHint="@color/hint_color"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/apply"
+            style="@style/SolidButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44"
+            android:text="View Plans"
+            android:textSize="@dimen/text_16"
+            android:layout_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/code"
+            android:layout_marginTop="@dimen/dimen_24"
+            />
+
+    </LinearLayout>
+</LinearLayout>

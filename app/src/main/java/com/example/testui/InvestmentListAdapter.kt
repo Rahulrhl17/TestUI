@@ -40,7 +40,7 @@ class InvestmentListAdapter(private val items: List<String>,val context:Context)
 
         // creating a variable for our bottom sheet dialog.
         val bottomSheetTeachersDialog =
-            BottomSheetDialog(context, R.style.AppBottomSheetDialogTheme)
+            BottomSheetDialog(context, R.style.BottomSheetDialog01)
         val layout: View = LayoutInflater.from(context)
             .inflate(R.layout.details_confirmation_bottom_sheet, null)
         val yes=layout.findViewById<MaterialButton>(R.id.yes)
@@ -57,7 +57,7 @@ class InvestmentListAdapter(private val items: List<String>,val context:Context)
 
         // creating a variable for our bottom sheet dialog.
         val bottomSheetTeachersDialog =
-            BottomSheetDialog(context, R.style.AppBottomSheetDialogTheme)
+            BottomSheetDialog(context, R.style.BottomSheetDialog01)
         val layout: View = LayoutInflater.from(context)
             .inflate(R.layout.representative_code_bottom_sheet, null)
         val yes=layout.findViewById<MaterialButton>(R.id.apply)
@@ -73,9 +73,25 @@ class InvestmentListAdapter(private val items: List<String>,val context:Context)
 
         // creating a variable for our bottom sheet dialog.
         val bottomSheetTeachersDialog =
-            BottomSheetDialog(context, R.style.AppBottomSheetDialogTheme)
+            BottomSheetDialog(context, R.style.BottomSheetDialog01)
         val layout: View = LayoutInflater.from(context)
             .inflate(R.layout.terms_conditions_bottom_sheet, null)
+        val yes=layout.findViewById<MaterialButton>(R.id.agree)
+        yes.setOnClickListener({
+            showSelectInsuranceBottomSheetDialog(context)
+        })
+        bottomSheetTeachersDialog.setCancelable(true)
+        bottomSheetTeachersDialog.setCanceledOnTouchOutside(true)
+        bottomSheetTeachersDialog.setContentView(layout)
+        bottomSheetTeachersDialog.show()
+    }
+    fun showSelectInsuranceBottomSheetDialog(context: Context){
+
+        // creating a variable for our bottom sheet dialog.
+        val bottomSheetTeachersDialog =
+            BottomSheetDialog(context, R.style.BottomSheetDialog01)
+        val layout: View = LayoutInflater.from(context)
+            .inflate(R.layout.select_insurance_bottom_sheet, null)
 
         bottomSheetTeachersDialog.setCancelable(true)
         bottomSheetTeachersDialog.setCanceledOnTouchOutside(true)

@@ -82,23 +82,15 @@
         <item name="android:fontFamily">@font/baloo2_medium</item>
     </style>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
-    </style>
-    <style name="AppBottomSheetDialogTheme"
-        parent="Theme.Design.Light.BottomSheetDialog">
-        <item name="bottomSheetStyle">@style/AppModalStyle</item>
-    </style>
 
-    <style name="AppModalStyle"
-        parent="Widget.Design.BottomSheet.Modal">
-        <item name="android:background">@drawable/bottomsheet_dialog_curve_shape</item>
-    </style>
 
     <style name="CardViewStyle" parent="CardView">
          <item name="cardElevation">0.5dp</item>
         <item name="cardCornerRadius">10dp</item>
         <item name="background">@color/white</item>
     </style>
+    <style name="BottomSheetDialog01" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">    <item name="bottomSheetStyle">@style/BottomSheetModal</item></style>
+
+    <style name="BottomSheetModal" parent="Widget.Design.BottomSheet.Modal">    <item name="android:background">@android:color/transparent</item></style>
 
 </resources>

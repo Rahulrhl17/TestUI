@@ -122,5 +122,11 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="state">State</string>
     <string name="city">City</string>
     <string name="okay">Okay</string>
+    <string name="select_insurance">Select Insurance</string>
+    <string name="buy_insurance">Buy Insurance</string>
+    <string name="pay_premium">Pay Premium</string>
+    <string name="were_you_assisted_by_fino_representative">Were you assisted by FINO representative?</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="e_g_dl12b34768">e.g. DL12b34768</string>
 
 </resources>

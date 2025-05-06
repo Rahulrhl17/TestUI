@@ -5,7 +5,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     >
-
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="@dimen/dimen_44"
+               android:layout_height="4dp"
+               android:backgroundTint="@color/white"
+               android:layout_gravity="center"
+               android:src="@drawable/ic_bottom_sheet_drag_handling"
+               android:layout_marginTop="@dimen/dimen_6"
+               />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -14,7 +25,9 @@
             android:paddingStart="@dimen/dimen_16"
             android:paddingEnd="@dimen/dimen_16"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:background="@drawable/bottomsheet_dialog_curve_shape">
             <TextView
                 android:id="@+id/termConditionText"
                 android:layout_width="wrap_content"
@@ -49,5 +62,5 @@
                 />
         </LinearLayout>
 
-
+       </LinearLayout>
 </ScrollView>
