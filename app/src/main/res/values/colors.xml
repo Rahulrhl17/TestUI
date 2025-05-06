@@ -6,9 +6,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="off_white">#F5F7F9</color>
     <color name="blue">#414099</color>
+    <color name="darkBlue">#1C1C70</color>
     <color name="red">#F44336</color>
     <color name="caretRed">#ED1B2F</color>
     <color name="indigo">#523C8E</color>
+    <color name="indigoDark">#48308A</color>
     <color name="primary">#3D3CCC</color>
     <color name="primaryDisabled">#9999E2</color>
     <color name="finoBlue">#414099</color>
