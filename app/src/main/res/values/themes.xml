@@ -101,4 +101,10 @@
         <item name="android:background">@drawable/bottomsheet_dialog_curve_shape</item>
     </style>
 
+    <style name="CardViewStyle" parent="CardView">
+         <item name="cardElevation">0.5dp</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="background">@color/white</item>
+    </style>
+
 </resources>

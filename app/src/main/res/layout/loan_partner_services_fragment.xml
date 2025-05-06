@@ -61,8 +61,7 @@
         android:layout_marginStart="@dimen/start_end_margin"
         android:layout_marginEnd="@dimen/start_end_margin"
         android:layout_marginTop="@dimen/dimen_24"
-        app:cardCornerRadius="@dimen/card_corner_radius"
-        android:background="@color/white"
+        style="@style/CardViewStyle"
         >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
