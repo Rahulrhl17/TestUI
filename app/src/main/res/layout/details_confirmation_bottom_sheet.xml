@@ -19,7 +19,6 @@
         android:text="@string/confirm_details_before_proceeding"
         android:textSize="@dimen/text_16"
         android:textColor="@color/text_colors"
-        android:textFontWeight="600"
          />
              <ImageView
                  android:id="@+id/icon"
@@ -40,7 +39,6 @@
         android:text="Fino Payments Bank"
         android:textSize="@dimen/text_14"
         android:textColor="@color/black"
-        android:textFontWeight="600"
         app:layout_constraintStart_toEndOf="@id/icon"
         android:layout_marginTop="@dimen/dimen_9"
          />
@@ -55,7 +53,6 @@
         android:text="Savings - XXXXXX5789"
         android:textSize="@dimen/text_14"
         android:textColor="@color/text_colors"
-        android:textFontWeight="600"
         app:layout_constraintStart_toEndOf="@id/icon"
         />
     <TextView
@@ -67,7 +64,6 @@
         android:text="Were you assisted by FINO representative?"
         android:textSize="@dimen/text_16"
         android:textColor="@color/text_colors"
-        android:textFontWeight="600"
         android:layout_marginTop="@dimen/dimen_24"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -85,7 +81,6 @@
         app:layout_constraintEnd_toStartOf="@id/yes"
         android:layout_marginTop="@dimen/dimen_24"
         android:layout_marginEnd="@dimen/dimen_9"
-        android:textFontWeight="600"
         />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/yes"
@@ -100,7 +95,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="@dimen/dimen_24"
         android:layout_marginStart="@dimen/dimen_9"
-        android:textFontWeight="600"
         />
 
 

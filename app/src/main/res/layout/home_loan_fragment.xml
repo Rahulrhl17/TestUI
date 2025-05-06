@@ -3,11 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/off_white">
-    <include
-        android:id="@+id/headerLayout"
-        layout="@layout/header_layout"/>
+    xmlns:tools="http://schemas.android.com/tools">
+<include layout="@layout/header_layout"
+    android:id="@+id/headerLayout"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,132 +36,181 @@
                     android:paddingBottom="@dimen/dimen_20"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/loan_features"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/headerText"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansSemiBold"
-                        android:text="@string/loan_features"
+                        android:text="@string/provice_details"
                         android:textSize="@dimen/text_16"
                         android:textColor="@color/text_colors"
                         />
+
                     <TextView
-                        android:id="@+id/brandsText"
+                        android:id="@+id/nameText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansRegular"
-                        android:text="@string/brands"
+                        android:text="@string/name"
                         android:textSize="@dimen/text_12"
                         android:textColor="@color/gray2"
-                        android:layout_marginTop="@dimen/dimen_27"
+                        android:layout_marginTop="@dimen/dimen_20"
                         />
                     <TextView
-                        android:id="@+id/brandsValue"
+                        android:id="@+id/nameValue"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansSemiBold"
-                        tools:text="Bajaj, Chetak, KTM, Dominar, Triump,"
+                        tools:text="Deependra Geeta"
                         android:textSize="@dimen/text_14"
                         android:textColor="@color/text_colors"
                         android:layout_marginTop="@dimen/dimen_4"
+
                         />
                     <TextView
-                        android:id="@+id/loanAmountText"
+                        android:id="@+id/panText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansRegular"
-                        android:text="@string/loan_amount"
+                        android:text="@string/pan"
                         android:textSize="@dimen/text_12"
                         android:textColor="@color/gray2"
                         android:layout_marginTop="@dimen/dimen_16"
                         />
+
                     <TextView
-                        android:id="@+id/loanAmountValue"
+                        android:id="@+id/panValue"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansSemiBold"
-                        android:text="50K to 7 Lacs"
+                        tools:text="AIYPD9085D"
                         android:textSize="@dimen/text_14"
                         android:textColor="@color/text_colors"
                         android:layout_marginTop="@dimen/dimen_4"
+
                         />
-
-
                     <TextView
-                        android:id="@+id/rateOfInterestText"
+                        android:id="@+id/mobileNumberText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansRegular"
-                        android:text="@string/rate_of_interest"
+                        android:text="@string/mobile_number"
                         android:textSize="@dimen/text_12"
                         android:textColor="@color/gray2"
                         android:layout_marginTop="@dimen/dimen_16"
                         />
+
                     <TextView
-                        android:id="@+id/rateOfInterestValue"
+                        android:id="@+id/mobileNumberValue"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansSemiBold"
-                        android:text="13% - 30% p.a."
+                        tools:text="8493339285"
                         android:textSize="@dimen/text_14"
                         android:textColor="@color/text_colors"
                         android:layout_marginTop="@dimen/dimen_4"
-                        />
 
+                        />
                     <TextView
-                        android:id="@+id/tenure"
+                        android:id="@+id/loanTypeText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansRegular"
-                        android:text="@string/tenure"
+                        android:text="@string/loan_type"
                         android:textSize="@dimen/text_12"
                         android:textColor="@color/gray2"
                         android:layout_marginTop="@dimen/dimen_16"
                         />
-                    <TextView
-                        android:id="@+id/tenureValue"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="@style/WorkSansSemiBold"
-                        android:text="12 to 36 months"
-                        android:textSize="@dimen/text_14"
-                        android:textColor="@color/text_colors"
-                        android:layout_marginTop="@dimen/dimen_4"
-                        />
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/loan_type_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:entries="@array/acc_holder_relationship"
+                        style="@style/SpinnerStyle"
+                        android:theme="@style/SpinnerStyle"
+                        android:layout_marginTop="8dp"
+                       />
 
                     <TextView
-                        android:id="@+id/loanProcessingFeesText"
+                        android:id="@+id/pincodeText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/WorkSansRegular"
-                        android:text="@string/loan_to_value"
+                        android:text="@string/enter_your_pin_code"
                         android:textSize="@dimen/text_12"
                         android:textColor="@color/gray2"
                         android:layout_marginTop="@dimen/dimen_16"
                         />
+                    <EditText
+                        android:id="@+id/code"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        style="@style/WorkSansRegular"
+                        android:textSize="@dimen/text_13"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingEnd="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/black"
+                        />
                     <TextView
-                        android:id="@+id/loanProcessingFeesValue"
+                        android:id="@+id/stateText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/WorkSansSemiBold"
-                        android:text="up to 4% of loan amount + GST"
-                        android:textSize="@dimen/text_14"
-                        android:textColor="@color/text_colors"
-                        android:layout_marginTop="@dimen/dimen_4"
+                        style="@style/WorkSansRegular"
+                        android:text="@string/state"
+                        android:textSize="@dimen/text_12"
+                        android:textColor="@color/gray2"
+                        android:layout_marginTop="@dimen/dimen_16"
                         />
+                    <EditText
+                        android:id="@+id/stateValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        style="@style/WorkSansRegular"
+                        android:textSize="@dimen/text_13"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingEnd="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:id="@+id/cityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/WorkSansRegular"
+                        android:text="@string/city"
+                        android:textSize="@dimen/text_12"
+                        android:textColor="@color/gray2"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        />
+                    <EditText
+                        android:id="@+id/cityValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:background="@drawable/text_field_bg"
+                        style="@style/WorkSansRegular"
+                        android:textSize="@dimen/text_13"
+                        android:paddingStart="@dimen/dimen_10"
+                        android:paddingEnd="@dimen/dimen_10"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/black"
+                        />
+
                     <TextView
                         android:id="@+id/requiredLoanAmountText"
+                        style="@style/WorkSansRegular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        style="@style/WorkSansRegular"
-                        android:text="Enter Required Loan Amount"
-                        android:textSize="@dimen/text_12"
-                        android:textColor="@color/gray2"
                         android:layout_marginTop="@dimen/dimen_16"
+                        android:text="Enter Required Loan Amount"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
                         />
 
                     <EditText
                         android:id="@+id/amountValue"
-                        style="@style/WorkSansSemiBold"
+                        style="@style/WorkSansRegular"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:layout_marginTop="@dimen/dimen_8"
@@ -176,19 +223,22 @@
                         android:textColor="@color/black"
                         android:textColorHint="@color/grey3"
                         android:textSize="@dimen/text_13"
-                    />
-                    <TextView
-                        android:id="@+id/termsConditionText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="@style/WorkSansRegular"
-                        android:text="@string/read_agreed_terms_condtion"
-                        android:textSize="@dimen/text_12"
-                        android:textColor="@color/text_colors"
-                        android:layout_marginTop="@dimen/dimen_15"/>
-
+                         />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/termsConditionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cardView"
+                app:layout_constraintStart_toStartOf="parent"
+                style="@style/WorkSansRegular"
+                android:text="@string/read_agreed_terms_condtion"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/text_colors"
+                android:layout_marginStart="@dimen/start_end_margin"
+                android:layout_marginEnd="@dimen/start_end_margin"
+                android:layout_marginTop="@dimen/dimen_15"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/apply"
@@ -198,7 +248,7 @@
                 android:text="@string/proceed"
                 android:textSize="@dimen/text_16"
                 android:layout_weight="1"
-                app:layout_constraintTop_toBottomOf="@id/cardView"
+                app:layout_constraintTop_toBottomOf="@id/termsConditionText"
                 android:layout_marginTop="@dimen/dimen_15"
                 android:layout_marginStart="@dimen/start_end_margin"
                 android:layout_marginEnd="@dimen/start_end_margin"
@@ -206,4 +256,5 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

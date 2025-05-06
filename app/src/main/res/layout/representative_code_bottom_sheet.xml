@@ -18,7 +18,6 @@
         android:text="@string/representative_code"
         android:textSize="@dimen/text_16"
         android:textColor="@color/text_colors"
-        android:textFontWeight="600"
         />
     <EditText
         android:id="@+id/code"
@@ -34,7 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         android:textColorHint="@color/text_hint_color"
         android:textColor="@color/black"
-        android:textFontWeight="400"
         android:textAllCaps="true"
         />
 
@@ -58,7 +56,6 @@
         android:layout_weight="1"
         app:layout_constraintTop_toBottomOf="@id/code"
         android:layout_marginTop="@dimen/dimen_24"
-        android:textFontWeight="600"
         />
 
 

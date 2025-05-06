@@ -112,5 +112,15 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="loan_features">Loan Features</string>
     <string name="brands">Brands</string>
     <string name="loan_to_value">Loan-to-Value</string>
+    <string name="t_amp_c_apply"><![CDATA[T&C Apply*]]></string>
+    <string name="provice_details">Kindly provide the details to apply for Home Loan</string>
+    <string name="name">Name</string>
+    <string name="pan">PAN</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="loan_type">Loan Type</string>
+    <string name="enter_your_pin_code">Enter your PIN Code</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="okay">Okay</string>
 
 </resources>

@@ -23,4 +23,7 @@
     <dimen name="dimen_48">48dp</dimen>
     <dimen name="dimen_32">32dp</dimen>
     <dimen name="text_10">10sp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="text_24">24sp</dimen>
 </resources>
