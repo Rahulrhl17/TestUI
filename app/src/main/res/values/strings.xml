@@ -128,5 +128,19 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="were_you_assisted_by_fino_representative">Were you assisted by FINO representative?</string>
     <string name="vehicle_number">Vehicle Number</string>
     <string name="e_g_dl12b34768">e.g. DL12b34768</string>
+    <string name="how_can_we_help_you">How can we help you?</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="frequently_asked_questions">Frequently asked questions</string>
+    <string name="raise_new_query">Raise New Query</string>
+    <string name="track_query">Track Query</string>
+    <string name="select_category">Select category</string>
+    <string name="raise_query">Raise Query</string>
+    <string name="okay_got_it">Okay, Got it</string>
+    <string name="select_sub_category">Select sub category</string>
+    <string name="select_transaction">Select Transaction</string>
+    <string name="add_remark">Add remark</string>
+    <string name="add_attachments">Add attachments</string>
+    <string name="you_can_upload_up_to_limit_5mb">You can upload up to limit 5MB</string>
+    <string name="email">Email</string>
 
 </resources>

@@ -76,7 +76,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 style="@style/WorkSansSemiBold"
                 android:text="@string/explore_more_with_fino"
-                android:textSize="@dimen/text_12"
+                android:textSize="@dimen/text_16"
                 android:textColor="@color/text_colors"
 
 
@@ -93,4 +93,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

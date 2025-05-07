@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/off_white"
+    android:orientation="vertical">
+    <include layout="@layout/header_layout"
+        android:id="@+id/headerLayout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        android:layout_marginTop="@dimen/dimen_24"
+        android:layout_marginStart="@dimen/dimen_18"
+        android:layout_marginEnd="@dimen/dimen_18"
+        style="@style/CardViewStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_20"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/selectCategoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/select_category"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+
+
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/selectCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/SpinnerStyle"
+                android:theme="@style/SpinnerStyle"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintTop_toBottomOf="@id/select_category"
+                />
+
+            <TextView
+                android:id="@+id/selectSubCategoryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/select_sub_category"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/dimen_20"
+
+
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/selectSubCategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/SpinnerStyle"
+                android:theme="@style/SpinnerStyle"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintTop_toBottomOf="@id/select_category"
+                />
+            <TextView
+                android:id="@+id/selectTransactionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/select_transaction"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/dimen_20"
+
+
+                />
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/selectTransactionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                style="@style/SpinnerStyle"
+                android:theme="@style/SpinnerStyle"
+                android:layout_marginTop="@dimen/dimen_8"
+                app:layout_constraintTop_toBottomOf="@id/select_category"
+                />
+            <TextView
+                android:id="@+id/addRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/add_remark"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/dimen_20"
+
+
+                />
+
+            <EditText
+                android:id="@+id/remarkValue"
+                style="@style/WorkSansRegular"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/text_field_bg"
+                android:hint="Enter specific remarks to help us understand the issue you are facing."
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:paddingStart="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/addAttachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/add_attachments"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/dimen_20"
+
+
+                />
+
+            <EditText
+                android:id="@+id/attachmentEditText"
+                style="@style/WorkSansRegular"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/text_field_bg"
+                android:drawableEnd="@drawable/ic_upload_documents"
+                android:hint="Select an image or document"
+                android:paddingStart="10dp"
+                android:paddingEnd="@dimen/dimen_10"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/upload_mssg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/you_can_upload_up_to_limit_5mb"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/dimen_4"
+
+
+                />
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/WorkSansRegular"
+                android:text="@string/email"
+                android:textSize="@dimen/text_12"
+                android:textColor="@color/dark_grey"
+                android:layout_marginTop="@dimen/dimen_20"
+
+
+                />
+            <EditText
+                android:id="@+id/emailEditText"
+                style="@style/WorkSansSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:background="@drawable/text_field_bg"
+                android:paddingStart="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_hint_color"
+                android:textSize="@dimen/text_14"
+                android:paddingEnd="@dimen/dimen_10"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/proceed_button"
+                style="@style/SolidButton"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="@dimen/dimen_32"
+                android:text="@string/proceed"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
