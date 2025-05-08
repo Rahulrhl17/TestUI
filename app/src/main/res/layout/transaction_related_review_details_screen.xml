@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/off_white">
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/start_end_margin"
+                android:layout_marginEnd="@dimen/start_end_margin"
+                android:layout_marginTop="@dimen/dimen_24"
+                style="@style/CardViewStyle"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dimen_20"
+                    android:paddingTop="29dp"
+                    android:paddingEnd="@dimen/dimen_20"
+                    android:paddingBottom="@dimen/dimen_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/reviewDetails"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_details"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_16"
+                        />
+
+                    <TextView
+                        android:id="@+id/categoryText"
+                        style="@style/WorkSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:text="@string/category"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
+                        />
+
+                    <TextView
+                        android:id="@+id/categoryValue"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        tools:text="Transaction related"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_14"
+                        />
+
+                    <TextView
+                        android:id="@+id/subCategoryText"
+                        style="@style/WorkSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:text="@string/sub_category"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
+                        />
+
+                    <TextView
+                        android:id="@+id/subCategoryValue"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        tools:text="Payment issue"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_14"
+                        />
+
+                    <TextView
+                        android:id="@+id/transactionsText"
+                        style="@style/WorkSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:text="@string/transactions"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
+                        />
+
+                    <TextView
+                        android:id="@+id/transactionValue"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        tools:text="Txn. Ref number 203994852771"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_14"
+                        />
+
+                    <TextView
+                        android:id="@+id/attachmentText"
+                        style="@style/WorkSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:text="@string/attachment"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
+                        />
+
+                    <TextView
+                        android:id="@+id/attachmentValue"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        tools:text="traFNO12340654468766.jpg"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_14"
+                        />
+
+                    <TextView
+                        android:id="@+id/emailIdText"
+                        style="@style/WorkSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:text="@string/email_id"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
+                        />
+
+                    <TextView
+                        android:id="@+id/emailIdValue"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        tools:text="abc@gmail.com"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_14"
+                        />
+
+                    <TextView
+                        android:id="@+id/remarksText"
+                        style="@style/WorkSansRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:text="@string/remarks"
+                        android:textColor="@color/gray2"
+                        android:textSize="@dimen/text_12"
+                        />
+
+                    <TextView
+                        android:id="@+id/remarksValue"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="The money is not reflecting in recipient’s bank account"
+                        android:textColor="@color/text_colors"
+                        android:textSize="@dimen/text_14"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/apply"
+                style="@style/SolidButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44"
+                android:text="@string/submit_query"
+                android:textSize="@dimen/text_16"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@id/cardView"
+                android:layout_marginTop="90dp"
+                android:layout_marginStart="@dimen/start_end_margin"
+                android:layout_marginEnd="@dimen/start_end_margin"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

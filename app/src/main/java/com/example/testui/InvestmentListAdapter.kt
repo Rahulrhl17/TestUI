@@ -17,7 +17,7 @@ class InvestmentListAdapter(private val items: List<String>,val context:Context)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyRecyclerViewDataHolder {
         val view: View =
-            LayoutInflater.from(parent.context).inflate(R.layout.investment_list_card, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.investment_list_item, parent, false)
         return MyRecyclerViewDataHolder(view)
     }
 

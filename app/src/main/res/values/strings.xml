@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestUI</string>
+    <string name="app_name" translatable="false">TestUI</string>
     <string name="confirm_details_before_proceeding">Confirm details before proceeding</string>
     <string name="no">No</string>
     <string name="yes">Yes</string>
@@ -142,5 +142,22 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="add_attachments">Add attachments</string>
     <string name="you_can_upload_up_to_limit_5mb">You can upload up to limit 5MB</string>
     <string name="email">Email</string>
+    <string name="which_transaction_do_you_need_help_with">Which transaction do you need help with?</string>
+    <string name="last_7_days">Last 7 days</string>
+    <string name="all_transactions">All Transactions</string>
+    <string name="view_more">View more</string>
+    <string name="food">Food</string>
+    <string name="select_duration">Select duration</string>
+    <string name="review_details">Review Details</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub category</string>
+    <string name="transactions">Transactions</string>
+    <string name="attachment">Attachment</string>
+    <string name="email_id">Email ID</string>
+    <string name="remarks">Remarks</string>
+    <string name="submit_query">Submit Query</string>
+    <string name="query_raised">Query raised!</string>
+    <string name="query_details">Query Details</string>
+    <string name="reference_number">Reference number</string>
 
 </resources>

@@ -12,7 +12,9 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,7 +104,13 @@
 
 
                 />
-
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+            app:counterMaxLength="200"
+            >
             <EditText
                 android:id="@+id/remarkValue"
                 style="@style/WorkSansRegular"
@@ -112,12 +120,14 @@
                 android:background="@drawable/text_field_bg"
                 android:hint="Enter specific remarks to help us understand the issue you are facing."
                 android:inputType="textMultiLine"
-                android:lines="8"
+                android:lines="4"
                 android:paddingStart="10dp"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
                 android:textColorHint="@color/text_hint_color"
-                android:textSize="@dimen/text_14" />
+                android:textSize="@dimen/text_14"
+                />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/addAttachments"

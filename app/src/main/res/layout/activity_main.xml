@@ -35,10 +35,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="@dimen/dimen_20"
                 android:layout_marginEnd="@dimen/dimen_20" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datePicker"
+                android:text="Select Date"
+                app:layout_constraintTop_toBottomOf="@id/recyclerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
-
+        <include layout="@layout/bottom_navigation_view"/>
 
 
 

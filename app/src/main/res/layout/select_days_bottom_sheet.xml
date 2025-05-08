@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="@dimen/dimen_44"
+        android:layout_height="4dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_bottom_sheet_drag_handling"
+        android:layout_marginTop="@dimen/dimen_6"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_18"
+        android:paddingEnd="@dimen/dimen_18"
+        android:paddingTop="@dimen/dimen_24"
+        android:paddingBottom="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:background="@drawable/bottomsheet_dialog_curve_shape"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/selectDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/WorkSansSemiBold"
+            android:text="@string/select_duration"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_colors"
+            />
+
+        <TextView
+            android:id="@+id/last_seven_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/WorkSansSemiBold"
+            android:text="@string/last_7_days"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_24"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="@color/stroke"
+            />
+        <TextView
+            android:id="@+id/last_fisteen_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/WorkSansSemiBold"
+            android:text="Last 15 days"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_16"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="@color/stroke"
+            />
+        <TextView
+            android:id="@+id/last_thirty_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/WorkSansSemiBold"
+            android:text="Last 30 days"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_16"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="@color/stroke"
+            />
+        <TextView
+            android:id="@+id/select_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/WorkSansSemiBold"
+            android:text="Select days"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_16"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

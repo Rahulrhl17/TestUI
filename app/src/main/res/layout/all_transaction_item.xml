@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/dimen_18">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:shapeAppearanceOverlay="@style/CircleImageView"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/placeholder_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile"
+        style="@style/WorkSansSemiBold"
+        android:text="Adesh Singh"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dimen_16"
+
+
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        app:layout_constraintStart_toEndOf="@id/profile"
+        style="@style/WorkSansRegular"
+        android:text="Today, 9:30 PM"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/gray2"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_4"
+
+        />
+    <TextView
+        android:id="@+id/amountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/credit_debit_icon"
+        style="@style/WorkSansSemiBold"
+        android:text="₹2,500"
+        android:textSize="@dimen/text_14"
+        android:textColor="@color/text_colors"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginEnd="@dimen/dimen_4"
+
+        />
+        <ImageView
+            android:id="@+id/credit_debit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/id_debit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/amountValue"/>
+
+    <TextView
+        android:id="@+id/statusValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/credit_debit_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/WorkSansMedium"
+        android:text="Declined"
+        android:textSize="@dimen/text_12"
+        android:textColor="@color/fab_bg"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_4"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/foodLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintStart_toStartOf="@id/time"
+        app:cardCornerRadius="55dp"
+        app:cardBackgroundColor="@color/dark_cream"
+        app:cardElevation="0dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food"
+                android:textSize="@dimen/text_10"
+                android:paddingStart="@dimen/dimen_8"
+                android:paddingEnd="@dimen/dimen_8"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/text_colors"
+                android:drawablePadding="@dimen/dimen_8"
+                android:gravity="center"
+                style="@style/WorkSansMedium"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
