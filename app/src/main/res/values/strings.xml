@@ -159,5 +159,7 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="query_raised">Query raised!</string>
     <string name="query_details">Query Details</string>
     <string name="reference_number">Reference number</string>
+    <string name="hint">Enter specific remarks to help  us understand  the issue you are facing.</string>
+    <string name="all_raised_queries">All Raised Queries</string>
 
 </resources>
