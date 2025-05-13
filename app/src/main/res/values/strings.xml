@@ -161,5 +161,11 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="reference_number">Reference number</string>
     <string name="hint">Enter specific remarks to help  us understand  the issue you are facing.</string>
     <string name="all_raised_queries">All Raised Queries</string>
+    <string name="status">Status</string>
+    <string name="date">Date</string>
+    <string name="service_request_no">Service \nRequest no.</string>
+    <string name="close">Close</string>
+    <string name="from_date">From date</string>
+    <string name="to_date">To date</string>
 
 </resources>
