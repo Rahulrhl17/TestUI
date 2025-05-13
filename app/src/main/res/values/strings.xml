@@ -62,6 +62,11 @@
         <item>Divorced</item>
         <item>Widowed</item>
     </string-array>
+    
+    <string-array name="improve_spinner">
+        <item>Select any one option</item>
+    </string-array>
+
     <string-array name="education_qualification">
         <item>Select</item>
     </string-array>

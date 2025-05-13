@@ -55,4 +55,5 @@
     <color name="background_grey">#F5F7F9</color>
     <color name="light_purple">#E6E5FF</color>
     <color name="dark_blue">#404094</color>
+    <color name="rating_star">#FFEF00</color>
 </resources>
