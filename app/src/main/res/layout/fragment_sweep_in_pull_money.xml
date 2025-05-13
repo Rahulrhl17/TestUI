@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+   android:background="@color/background_grey"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:contentPadding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/WorkSansRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/enter_the_amount_you_want_to_add"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                style="@style/WorkSansSemiBold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_rounded_green"
+                android:backgroundTint="@color/purple_lite" />
+
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                style="@style/WorkSansRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/sweep_in_my_entire_balance"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"
+                app:buttonTint="@color/indigo" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                style="@style/WorkSansRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:gravity="top"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp"
+                android:text="@string/i_hereby_give_my_consent_to_fino_payments_bank_for_sweeping_my_account_balance_from_suryoday_small_finance_bank_to_my_fino_payments_bank_account_as_per_my_request_i_understand_that_balance_can_be_sweeped_in_my_fino_payments_bank_account_in_nearest_round_figure_only"
+                android:textColor="@color/text_color_black"
+                android:textSize="14sp"
+                app:buttonTint="@color/indigo" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

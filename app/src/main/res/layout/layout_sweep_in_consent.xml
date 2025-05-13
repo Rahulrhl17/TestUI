@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/WorkSansRegular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="•"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp" />
+
+    <TextView
+        style="@style/WorkSansSemiBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Sweep Account will enable you to keep unrestricted balance in your Fino Payments Bank account."
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp" />
+
+</LinearLayout>
