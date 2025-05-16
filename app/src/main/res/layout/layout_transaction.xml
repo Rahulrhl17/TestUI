@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        style="@style/WorkSansSemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="20 April 2023, 10:54 AM" />
+
+    <TextView
+        android:id="@+id/textViewDetails"
+        style="@style/WorkSansRegular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDateTime"
+        tools:text="UPI - lorem ipsum HDFCC023234-584256DSDS
+Reference number - 89632423L.." />
+
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        style="@style/WorkSansSemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawableEnd="@drawable/ic_arrow_red"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="₹10,000" />
+
+  <!--  <View
+        android:layout_width="0dp"
+        android:layout_height=".5dp"
+        android:background="@color/separator_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetails" />
+
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

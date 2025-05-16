@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_grey">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/background_purple"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_debitcard_frame"
+                app:layout_constraintDimensionRatio="16:10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:contentDescription="cardFrame" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewCardDetails"
+                style="@style/SolidButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/view_card_details"
+                android:textAllCaps="false"
+                android:textColor="@color/button_blue"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toStartOf="@+id/btnRequestPhysicalCard"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRequestPhysicalCard"
+                style="@style/OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/request_physical_card"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnViewCardDetails"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:strokeColor="@color/white" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                app:contentPadding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/WorkSansBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/manage_card"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/transaction_limits"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:drawableEndCompat="@drawable/ic_right"
+                        app:drawableStartCompat="@drawable/ic_transaction_limits"
+                        app:iconGravity="textStart"
+                        app:rippleColor="?attr/colorControlHighlight" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/separator_grey" />
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/change_card_pin"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:drawableEndCompat="@drawable/ic_right"
+                        app:drawableStartCompat="@drawable/ic_card"
+                        app:iconGravity="textStart"
+                        app:rippleColor="?attr/colorControlHighlight" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/separator_grey" />
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/block_card_temporarily"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:drawableEndCompat="@drawable/ic_right"
+                        app:drawableStartCompat="@drawable/ic_lock"
+                        app:iconGravity="textStart"
+                        app:rippleColor="?attr/colorControlHighlight" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@color/separator_grey" />
+
+                    <TextView
+                        style="@style/TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawablePadding="10dp"
+                        android:gravity="start|center_vertical"
+                        android:text="@string/block_card_permanently"
+                        android:textAllCaps="false"
+                        android:textColor="@color/red"
+                        android:textSize="12sp"
+                        app:drawableEndCompat="@drawable/ic_right"
+                        app:drawableStartCompat="@drawable/ic_block"
+                        app:iconGravity="textStart"
+                        app:rippleColor="?attr/colorControlHighlight" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background stroke with slim height -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <padding
+                android:bottom="3dp"
+                android:top="3dp" />
+            <solid android:color="@color/inactive_grey" />
+            <stroke
+                android:width="10dp"
+                android:color="@android:color/transparent" />
+            <corners android:radius="5dp" />
+            <size android:height="4dp" /> <!-- 👈 This is the height of the track -->
+        </shape>
+    </item>
+
+    <!-- Progress Fill -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <stroke
+                    android:width="3dp"
+                    android:color="@color/inactive_grey" />
+                <solid android:color="@color/active_blue" />
+                <corners android:radius="5dp" />
+                <size android:height="4dp" /> <!-- 👈 This must match the background -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

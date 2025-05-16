@@ -41,6 +41,19 @@
     <color name="kyc_card_stroke">#EAD7F6</color>
     <color name="search_stroke">#CACACA</color>
     <color name="search_hint">#D9D9D9</color>
+
+    <color name="text_color_black">#333333</color>
+    <color name="text_color_grey">#828282</color>
+    <color name="text_color_grey1">#4F4F4F</color>
+<!--    <color name="purple">#523C8E</color>-->
+    <color name="background_purple">#523C8E</color>
+    <color name="purple_lite">#F3F3FF</color>
+    <color name="active_blue">#3F3DFF</color>
+    <color name="button_blue">#3D3CCC</color>
+    <color name="inactive_grey">#DBE1E8</color>
+    <color name="separator_grey">#BDBDBD</color>
+    <color name="background_grey">#F5F7F9</color>
     <color name="light_purple">#E6E5FF</color>
     <color name="dark_blue">#404094</color>
+    <color name="rating_star">#FFEF00</color>
 </resources>

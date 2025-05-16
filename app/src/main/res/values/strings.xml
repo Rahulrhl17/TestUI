@@ -62,6 +62,11 @@
         <item>Divorced</item>
         <item>Widowed</item>
     </string-array>
+    
+    <string-array name="improve_spinner">
+        <item>Select any one option</item>
+    </string-array>
+
     <string-array name="education_qualification">
         <item>Select</item>
     </string-array>
@@ -175,5 +180,66 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="aadhaar_number">Aadhaar number</string>
     <string name="pan_number">Pan number</string>
     <string name="powered_by">Powered By</string>
+
+    <string name="basic_details">Basic Details</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="kyc_status">KYC Status</string>
+    <string name="verified">Verified</string>
+    <string name="view_card_details">View Card Details</string>
+    <string name="request_physical_card">Request Physical Card</string>
+    <string name="transaction_limits">Transaction limits</string>
+    <string name="block_card_permanently">Block card permanently</string>
+    <string name="block_card_temporarily">Block card temporarily</string>
+    <string name="change_card_pin">Change Card Pin</string>
+    <string name="manage_card">Manage Card</string>
+    <string name="info">Info</string>
+    <string name="set_pin_for_your_debit_card">Set PIN for your Debit Card</string>
+    <string name="i_ll_do_it_later">I’ll do it later</string>
+    <string name="set_pin">Set PIN</string>
+    <string name="atm_withdrawal">ATM Withdrawal</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="tap_and_pay">Tap and Pay</string>
+    <string name="international_usage">International Usage</string>
+    <string name="update">Update</string>
+    <string name="transaction_limits_set_nsuccessfully">Transaction limits set\nsuccessfully</string>
+    <string name="limit_on_each_transaction">Limit on each transaction</string>
+    <string name="sorry">Sorry!</string>
+    <string name="please_visit_the_nearest_merchant_or_branch_point_to_generate_your_pin">Please visit the nearest merchant or\nbranch point to generate your Pin</string>
+    <string name="go_to_branch_locater">Go to Branch Locater</string>
+    <string name="we_regret_to_inform_you_that_our_n_services_are_currently_down_please_try_n_again_after_some_time">We regret to inform you that our\n services are currently down. Please try\n again after some time</string>
+    <string name="verify_your_debit_card_details">Verify your debit card details</string>
+    <string name="card_number">Card number</string>
+    <string name="cvv">CVV</string>
+    <string name="xxx">XXX</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="valid_thru">Valid thru</string>
+    <string name="card_holder_s_name">Card holder’s name</string>
+    <string name="verify">Verify</string>
+    <string name="sweep_account_consent">Sweep Account Consent</string>
+    <string name="enter_the_amount_you_want_to_add">Enter the amount you want to add</string>
+    <string name="i_hereby_give_my_consent_to_fino_payments_bank_for_sweeping_my_account_balance_from_suryoday_small_finance_bank_to_my_fino_payments_bank_account_as_per_my_request_i_understand_that_balance_can_be_sweeped_in_my_fino_payments_bank_account_in_nearest_round_figure_only">I hereby give my consent to Fino Payments Bank for sweeping my account balance from Suryoday Small Finance Bank to my Fino Payments Bank Account as per my request. I understand that balance can be sweeped in my Fino Payments Bank Account in nearest round figure only.</string>
+    <string name="sweep_in_my_entire_balance">Sweep-in my entire balance</string>
+    <string name="sweep_from">Sweep from</string>
+    <string name="available_balance">Available balance</string>
+    <string name="sweep_to">Sweep to</string>
+    <string name="account_type">Account Type</string>
+    <string name="savings">Savings</string>
+    <string name="select_sweep_account">Select Sweep Account</string>
+    <string name="download">Download</string>
+    <string name="current_month">Current month</string>
+    <string name="last_3_months">Last 3 months</string>
+    <string name="last_6_months">Last 6 months</string>
+    <string name="last_year">Last year</string>
+    <string name="select_dates">Select dates</string>
+    <string name="statement_emailed_successfully">Statement emailed successfully</string>
+    <string name="you_can_expect_the_statement_in_your_inbox_alexgeorge_gmail_com_in_5_10_mins">You can expect the statement in your inbox (alexgeorge@gmail.com) in 5-10 mins</string>
+    <string name="guide_for_sweep_account">Guide for Sweep Account</string>
+    <string name="bank_services">Bank Services</string>
+    <string name="click_on_account_sweep_in">Click on Account Sweep in</string>
+    <string name="bank_nservices">Bank\nServices</string>
+    <string name="click_on_account_nsweep_in">Click on Account\nSweep in</string>
+    <string name="click_on_pull_nmoney">Click on Pull\nmoney</string>
+
 
 </resources>

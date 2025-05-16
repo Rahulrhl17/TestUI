@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/active_blue"/> <!-- Blue -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/inactive_grey"/> <!-- Grey when off -->
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>

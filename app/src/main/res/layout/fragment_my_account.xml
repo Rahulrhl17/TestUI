@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_grey"
+        android:paddingLeft="18dp"
+        android:paddingTop="18dp"
+        android:paddingRight="18dp"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:background="@color/white"
+            android:src="@drawable/img_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/CircleImageView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera_edit"
+            app:layout_constraintBottom_toBottomOf="@+id/shapeableImageView"
+            app:layout_constraintEnd_toEndOf="@+id/shapeableImageView" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBasicDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shapeableImageView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/WorkSansBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/basic_details"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                    <include
+                        android:id="@+id/userNameField"
+                        layout="@layout/layout_my_account_inputs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/fatherNameField"
+                        layout="@layout/layout_my_account_inputs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/motherNameField"
+                        layout="@layout/layout_my_account_inputs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/nomineeNameField"
+                        layout="@layout/layout_my_account_inputs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/customerIdField"
+                        layout="@layout/layout_my_account_views" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/dobField"
+                        layout="@layout/layout_my_account_views" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/aadhaarNumberField"
+                        layout="@layout/layout_my_account_views" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/panNumberField"
+                        layout="@layout/layout_my_account_inputs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/ifscCodeField"
+                        layout="@layout/layout_my_account_views" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/branchNameField"
+                        layout="@layout/layout_my_account_views" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+
+                    <include
+                        android:id="@+id/signatureField"
+                        layout="@layout/layout_my_account_inputs" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/separator_grey" />
+                </LinearLayout>
+
+                <!--                <View-->
+                <!--                    android:id="@+id/view2"-->
+                <!--                    android:layout_width="261dp"-->
+                <!--                    android:layout_height=".5dp"-->
+                <!--                    android:background="@color/separator_grey"-->
+                <!--                    tools:layout_editor_absoluteX="114dp" />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvContactDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvBasicDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/WorkSansBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_details"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/emailIdField"
+                    layout="@layout/layout_my_account_inputs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/separator_grey" />
+
+                <include
+                    android:id="@+id/phoneNumberField"
+                    layout="@layout/layout_my_account_inputs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/separator_grey" />
+
+                <include
+                    android:id="@+id/communicationAddressField"
+                    layout="@layout/layout_my_account_inputs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/separator_grey" />
+
+                <include
+                    android:id="@+id/permanentAddressField"
+                    layout="@layout/layout_my_account_inputs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/separator_grey" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvKYC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cvContactDetails">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    style="@style/WorkSansBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kyc_status"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    style="@style/WorkSansRegular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_rounded_green"
+                    android:paddingStart="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="2dp"
+                    android:text="@string/verified"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
