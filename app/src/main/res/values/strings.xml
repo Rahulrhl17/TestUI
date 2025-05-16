@@ -240,6 +240,28 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="bank_nservices">Bank\nServices</string>
     <string name="click_on_account_nsweep_in">Click on Account\nSweep in</string>
     <string name="click_on_pull_nmoney">Click on Pull\nmoney</string>
+    <string name="locker_details">Locker Details</string>
+    <string name="quantity">Quantity</string>
+    <string name="worth">Worth</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="area_colony_road">Area, colony, road</string>
+    <string name="town_city">Town/City</string>
+    <string name="district">District</string>
+    <string name="country">Country\n</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="view_t_amp_c"><![CDATA[View T&C]]></string>
+    <string name="highlights">Highlights</string>
+    <string name="estimated_dispatch">Estimated dispatch</string>
+    <string name="gst_charges">GST Charges</string>
+    <string name="ministing_cost">Ministing cost</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="gold_delivery_request_submitted">Your gold delivery request is submitted successfully.</string>
+    <string name="completed">completed</string>
+    <string name="delivery_details">Delivery details</string>
+    <string name="new_locker_balance">New locker balance</string>
+    <string name="transaction_id">transaction ID</string>
+    <string name="address">Address</string>
+    <string name="expected_date_of_delivery">Expected date of delivery</string>
 
 
 </resources>

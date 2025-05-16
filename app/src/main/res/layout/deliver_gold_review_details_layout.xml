@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/header_layout"
+        android:id="@+id/headerLayout"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/off_white"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/start_end_margin"
+            android:layout_marginEnd="@dimen/start_end_margin"
+            android:layout_marginTop="@dimen/dimen_24">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CardViewStyle"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dimen_20"
+                    android:paddingBottom="@dimen/dimen_44"
+                    android:paddingEnd="@dimen/dimen_20"
+                    android:paddingTop="@dimen/dimen_29"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_details"
+                        android:textSize="@dimen/text_16"
+                        style="@style/WorkSansSemiBold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quantity"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="22dp"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.00079 gm"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estimated_dispatch"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/estimated_dispatch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 day"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gst_charges"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/gstCharges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 1.45"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ministing_cost"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/ministingCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 449.00"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 12,001.00"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/termsCondition"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textColor="@color/text_colors"
+                        android:textSize="14sp"
+                        app:buttonTint="@color/primary"
+                        android:text="I agree to the Terms and Conditions"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/proceedButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        app:layout_constraintBottom_toTopOf="@id/poweredBy"
+        style="@style/SolidButton"
+        android:text="@string/proceed"
+        android:textSize="@dimen/text_16"
+         android:layout_marginBottom="@dimen/dimen_22"
+        android:layout_marginStart="@dimen/dimen_18"
+        android:layout_marginEnd="@dimen/dimen_18"
+        />
+    <TextView
+        android:id="@+id/poweredBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/powered_by"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/safeGold"
+        app:layout_constraintEnd_toStartOf="@+id/safeGold"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0.5"
+        style="@style/WorkSansRegular"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_10"
+        android:layout_marginBottom="@dimen/dimen_24"/>
+
+    <ImageView
+        android:id="@+id/safeGold"
+        android:layout_width="91dp"
+        android:layout_height="22dp"
+        android:src="@drawable/safe_gold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/poweredBy"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/dimen_6"
+        android:layout_marginBottom="@dimen/dimen_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
