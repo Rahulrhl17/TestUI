@@ -262,6 +262,15 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="transaction_id">transaction ID</string>
     <string name="address">Address</string>
     <string name="expected_date_of_delivery">Expected date of delivery</string>
+    <string name="buy_gold">Buy Gold</string>
+    <string name="price">Price</string>
+    <string name="debit_from">Debit from</string>
+    <string name="faqs">FAQs</string>
+    <string name="pay">Pay</string>
+    <string name="things_to_consider">Things to consider</string>
+    <string name="tryAgain">Try again</string>
+    <string name="sell_gold">Sell Gold</string>
+    <string name="sell_price">Sell Price :</string>
 
 
 </resources>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/header_layout"
+        android:id="@+id/headerLayout"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/off_white"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/start_end_margin"
+            android:layout_marginEnd="@dimen/start_end_margin"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:paddingBottom="@dimen/dimen_50">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reviewDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CardViewStyle"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/dimen_20"
+                    android:paddingBottom="@dimen/dimen_44"
+                    android:paddingEnd="@dimen/dimen_20"
+                    android:paddingTop="@dimen/dimen_29"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/review_details"
+                        android:textSize="@dimen/text_16"
+                        style="@style/WorkSansSemiBold"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quantity"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="22dp"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0.00079 gm"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estimated_dispatch"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/estimated_dispatch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1 day"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gst_charges"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/gstCharges"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 1.45"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ministing_cost"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/ministingCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 449.00"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/gray2"/>
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 12,001.00"
+                        android:textSize="@dimen/text_14"
+                        style="@style/WorkSansSemiBold"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        />
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/termsCondition"
+                        android:layout_width="wrap_content"
+                        android:textAppearance="@style/WorkSansSemiBold"
+                        android:textColor="@color/text_colors"
+                        android:textSize="14sp"
+                        app:buttonTint="@color/primary"
+                        android:text="I agree to the Terms and Conditions"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/debitFromLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CardViewStyle"
+                app:layout_constraintTop_toBottomOf="@id/reviewDetailsLayout"
+                android:layout_marginTop="@dimen/dimen_15"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_20">
+                    <TextView
+                        android:id="@+id/debitFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/debit_from"
+                        android:textSize="@dimen/text_16"
+                        style="@style/WorkSansSemiBold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        />
+                    <ImageView
+                        android:id="@+id/finoIcon"
+                        android:layout_width="@dimen/dimen_48"
+                        android:layout_height="@dimen/dimen_48"
+                        android:src="@drawable/fino_icon"
+                        app:layout_constraintTop_toBottomOf="@id/debitFrom"
+                       android:layout_marginTop="@dimen/dimen_16"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                    <TextView
+                        android:id="@+id/bankName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FinoPay Digital Savings Account"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansSemiBold"
+                        app:layout_constraintTop_toTopOf="@id/finoIcon"
+                        app:layout_constraintStart_toEndOf="@id/finoIcon"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:id="@+id/accountNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="xxxx xxxx 5479"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        app:layout_constraintTop_toBottomOf="@id/bankName"
+                        app:layout_constraintStart_toEndOf="@id/finoIcon"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:textColor="@color/gray2"
+                        />
+
+                       <ImageView
+                           android:layout_width="@dimen/dimen_24"
+                           android:layout_height="@dimen/dimen_24"
+                           app:layout_constraintEnd_toEndOf="parent"
+                           app:layout_constraintTop_toBottomOf="@id/debitFrom"
+                           android:layout_marginTop="@dimen/dimen_16"
+                           android:src="@drawable/ic_round_caret"
+                           />
+
+                    <TextView
+                        android:id="@+id/availableBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Available balance: ₹ 15,640"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansSemiBold"
+                        app:layout_constraintTop_toBottomOf="@id/accountNumber"
+                        app:layout_constraintStart_toEndOf="@id/finoIcon"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textColor="@color/text_colors"
+                        />
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_44"
+                        app:layout_constraintTop_toBottomOf="@id/availableBalance"
+                        style="@style/SolidButton"
+                        android:text="@string/pay"
+                        android:layout_marginTop="@dimen/dimen_16"
+                        android:textSize="@dimen/text_16"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/poweredBy"
+                style="@style/WorkSansRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powered_by"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_10"
+                app:layout_constraintBottom_toBottomOf="@+id/safeGold"
+                app:layout_constraintEnd_toStartOf="@+id/safeGold"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/safeGold" />
+
+            <ImageView
+                android:id="@+id/safeGold"
+                android:layout_width="91dp"
+                android:layout_height="22dp"
+                android:src="@drawable/safe_gold"
+                app:layout_constraintStart_toEndOf="@id/poweredBy"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_32"
+                app:layout_constraintTop_toBottomOf="@id/debitFromLayout"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

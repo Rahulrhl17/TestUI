@@ -82,6 +82,21 @@
                         android:paddingStart="@dimen/dimen_16"
                         android:layout_marginTop="@dimen/dimen_8"/>
                     <TextView
+                        android:id="@+id/error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Insufficient gold balance"
+                        android:textSize="@dimen/text_12"
+                        style="@style/WorkSansRegular"
+                        android:layout_marginStart="@dimen/dimen_8"
+                        app:layout_constraintTop_toBottomOf="@id/select_quantity_spinner"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textColor="@color/fab_bg"
+                        android:layout_marginTop="@dimen/dimen_5"
+                        android:drawableStart="@drawable/ic_error"
+                        android:drawablePadding="@dimen/dimen_8"/>
+
+                    <TextView
                         android:id="@+id/info"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -89,7 +104,7 @@
                         android:textSize="@dimen/text_12"
                         style="@style/WorkSansSemiBold"
                         android:layout_marginStart="@dimen/dimen_8"
-                        app:layout_constraintTop_toBottomOf="@id/select_quantity_spinner"
+                        app:layout_constraintTop_toBottomOf="@id/error"
                         app:layout_constraintEnd_toEndOf="parent"
                         android:textColor="@color/text_colors"
                         android:layout_marginTop="@dimen/dimen_19"
@@ -118,7 +133,7 @@
                     android:id="@+id/faqs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FAQs"
+                    android:text="@string/faqs"
                     style="@style/WorkSansSemiBold"
                     android:textSize="@dimen/text_12"
                     android:textColor="@color/text_colors"
@@ -127,13 +142,14 @@
                     app:layout_constraintStart_toStartOf="parent"/>
                   <ImageView
                       android:id="@+id/forward"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:src="@drawable/ic_forward_arrow"
+                      android:layout_width="@dimen/dimen_24"
+                      android:layout_height="@dimen/dimen_24"
+                      android:src="@drawable/ic_round_caret"
                       app:layout_constraintTop_toTopOf="parent"
                       app:layout_constraintBottom_toBottomOf="parent"
                       app:layout_constraintEnd_toEndOf="parent"
-                      app:tint="@color/fab_bg"/>
+                      app:tint="@color/fab_bg"
+                      android:rotation="270"/>
 
               </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>

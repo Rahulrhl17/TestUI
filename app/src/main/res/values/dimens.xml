@@ -40,4 +40,8 @@
     <dimen name="dimen_19">19dp</dimen>
     <dimen name="dimen_21">21dp</dimen>
     <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_56">56dp</dimen>
+    <dimen name="dimen_209">209dp</dimen>
 </resources>
