@@ -59,4 +59,5 @@
     <color name="rating_star">#FFEF00</color>
     <color name="grey_shade">#ADAED2</color>
     <color name="dark_grey_shade">#787878</color>
+    <color name="light_grey">#E0E0E0</color>
 </resources>

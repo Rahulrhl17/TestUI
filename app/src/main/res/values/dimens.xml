@@ -44,4 +44,5 @@
     <dimen name="dimen_50">50dp</dimen>
     <dimen name="dimen_56">56dp</dimen>
     <dimen name="dimen_209">209dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
 </resources>

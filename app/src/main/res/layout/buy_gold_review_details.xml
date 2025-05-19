@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingStart="@dimen/dimen_20"
-                    android:paddingBottom="@dimen/dimen_44"
+                    android:paddingBottom="@dimen/dimen_18"
                     android:paddingEnd="@dimen/dimen_20"
                     android:paddingTop="@dimen/dimen_29"
                     android:orientation="vertical">
@@ -41,6 +41,8 @@
                         android:text="@string/review_details"
                         android:textSize="@dimen/text_16"
                         style="@style/WorkSansSemiBold"
+                        android:textColor="@color/text_colors"
+
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -58,6 +60,8 @@
                         android:textSize="@dimen/text_14"
                         style="@style/WorkSansSemiBold"
                         android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/text_colors"
+
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -75,6 +79,8 @@
                         android:textSize="@dimen/text_14"
                         style="@style/WorkSansSemiBold"
                         android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/text_colors"
+
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -92,6 +98,8 @@
                         android:textSize="@dimen/text_14"
                         style="@style/WorkSansSemiBold"
                         android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/text_colors"
+
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -109,6 +117,8 @@
                         android:textSize="@dimen/text_14"
                         style="@style/WorkSansSemiBold"
                         android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/text_colors"
+
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -126,6 +136,8 @@
                         android:textSize="@dimen/text_14"
                         style="@style/WorkSansSemiBold"
                         android:layout_marginTop="@dimen/dimen_8"
+                        android:textColor="@color/text_colors"
+
                         />
                     <com.google.android.material.checkbox.MaterialCheckBox
                         android:id="@+id/termsCondition"
