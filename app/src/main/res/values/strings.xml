@@ -62,7 +62,7 @@
         <item>Divorced</item>
         <item>Widowed</item>
     </string-array>
-    
+
     <string-array name="improve_spinner">
         <item>Select any one option</item>
     </string-array>
@@ -271,6 +271,8 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="tryAgain">Try again</string>
     <string name="sell_gold">Sell Gold</string>
     <string name="sell_price">Sell Price :</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
