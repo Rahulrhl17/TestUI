@@ -30,7 +30,6 @@ abstract class FinoPayActivity<VB : ViewBinding> : AppCompatActivity() {
 
     //Loading logic
     fun showLoading(isLoading: Boolean) {
-        Log.d("BaseActivity", "Loading: $isLoading")
     }
 
     //Toast Message

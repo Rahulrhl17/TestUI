@@ -1,22 +1,24 @@
 package com.example.testui.logics
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
-import com.example.testui.data.network.ApiService
-import com.example.testui.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
-import kotlinx.coroutines.launch
 
 @HiltViewModel
-class SampleViewModel @Inject constructor(
-    private val api: ApiService
-) : ViewModel() {
+class SampleViewModel @Inject constructor() : ViewModel() {
+
+    val email = MutableLiveData<String>()
+    val password = MutableLiveData<String>()
 
     private val _userData = MutableLiveData<String>()
     val userData: LiveData<String> = _userData
+
+    fun onButtonClick() {
+        Log.d("hai", "${email.value} === ${password.value}")
+    }
 
 //    fun fetchUser() {
 //        viewModelScope.launch {
