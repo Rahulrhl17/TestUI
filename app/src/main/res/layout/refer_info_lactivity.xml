@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         android:src="@drawable/refer_info_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.35" />
+        app:layout_constraintGuide_percent="0.33" />
     
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -42,10 +42,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/done"
         android:layout_marginHorizontal="18dp"
-        android:layout_marginBottom="50dp"
         android:layout_marginTop="24dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="0.1dp"
+        android:layout_marginBottom="20dp"
         app:cardBackgroundColor="@color/white">
 
         <LinearLayout

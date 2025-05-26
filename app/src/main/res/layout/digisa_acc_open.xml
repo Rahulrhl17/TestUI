@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/fino_label_logo"
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:src="@drawable/fino_pay_label"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,12 +63,13 @@
             app:layout_constraintBottom_toTopOf="@id/newCustomerCard"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="0dp"
             android:layout_marginHorizontal="16dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/finoBlue"
+                android:background="@color/indigoDark"
                 android:orientation="horizontal"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="24dp">
@@ -137,12 +138,13 @@
             app:layout_constraintTop_toBottomOf="@id/existingCustomerCard"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="0dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/finoBlue"
+                android:background="@color/indigoDark"
                 android:orientation="horizontal"
                 android:paddingHorizontal="8dp"
                 android:paddingVertical="24dp">
