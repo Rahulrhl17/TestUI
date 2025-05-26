@@ -37,6 +37,7 @@
     <TextView
         android:id="@+id/verifying_subtext"
         android:layout_width="0dp"
+        android:visibility="gone"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:layout_gravity="center_horizontal"
@@ -45,11 +46,105 @@
         android:layout_marginHorizontal="40dp"
         android:textAlignment="center"
         app:layout_constraintTop_toBottomOf="@id/verifying_text"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="This may take a few seconds. Please don't exit the app or press the back button."
         style="@style/WorkSansRegular"/>
+
+    <TextView
+        android:id="@+id/link_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/gray"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="40dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/verifying_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="+91 85452 85452 is linked to a FinoPay account."
+        style="@style/WorkSansRegular"/>
+
+    <LinearLayout
+        android:id="@+id/redirectin_layoutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginVertical="@dimen/dimen_24"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/link_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">
+        
+        <ProgressBar
+            android:id="@+id/verifying_progress"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:indeterminate="true"
+            android:layout_gravity="center_vertical"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/finoBlue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:text="Redirecting"
+            android:includeFontPadding="false"
+            style="@style/WorkSansSemiBold"/>
+        
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/verify_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/link_status"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/switch_sim"
+            style="@style/OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:text="Switch SIM"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@id/open_account"
+            android:textSize="16sp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/open_account"
+            style="@style/SolidButton"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:text="Open Account"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@id/switch_sim"
+            android:textSize="16sp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 

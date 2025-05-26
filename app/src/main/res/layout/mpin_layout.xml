@@ -46,6 +46,7 @@
         android:paddingStart="@dimen/start_end_margin"
         android:paddingEnd="@dimen/start_end_margin"
         android:gravity="center_horizontal"/>
+
         <LinearLayout
             android:id="@+id/mpinLayout"
             android:layout_width="wrap_content"
@@ -54,46 +55,61 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/descp"
-            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_24">
 
-            >
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/pin_one"
-        android:layout_width="@dimen/dimen_24"
-        android:layout_height="@dimen/dimen_24"
-        android:src="@drawable/ic_mpin_empty"
-        />
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/pin_two"
-        android:layout_width="@dimen/dimen_24"
-        android:layout_height="@dimen/dimen_24"
-        android:src="@drawable/ic_mpin_empty"
-        android:layout_marginStart="@dimen/dimen_12"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pin_one"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_mpin_empty"
+                />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pin_two"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_mpin_empty"
+                android:layout_marginStart="@dimen/dimen_12"/>
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/pin_three"
-        android:layout_width="@dimen/dimen_24"
-        android:layout_height="@dimen/dimen_24"
-        android:src="@drawable/ic_mpin_empty"
-        android:layout_marginStart="@dimen/dimen_12"/>
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/pin_four"
-        android:layout_width="@dimen/dimen_24"
-        android:layout_height="@dimen/dimen_24"
-        android:src="@drawable/ic_mpin_empty"
-        android:layout_marginStart="@dimen/dimen_12"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pin_three"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_mpin_empty"
+                android:layout_marginStart="@dimen/dimen_12"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pin_four"
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@drawable/ic_mpin_empty"
+                android:layout_marginStart="@dimen/dimen_12"/>
+
         </LinearLayout>
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/save_button"
+        android:id="@+id/forgot_mpin"
+        style="@style/TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="40dp"
+        android:text="Forgot MPIN?"
+        android:fontFamily="@font/work_sans_semibold"
+        android:textSize="12sp"
+        android:textColor="@color/text_color_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/save_or_verify"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_or_verify"
         style="@style/SolidButton"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="@dimen/dimen_40"
         android:text="@string/save"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/mpinLayout"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="20dp"
 
