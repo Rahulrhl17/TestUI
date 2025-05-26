@@ -288,6 +288,15 @@ Fino Bank/Mutual Fund Partner reserve the right to modify/ change all or any of 
     <string name="tracker_id">Tracker ID</string>
     <string name="courier_company">Courier company</string>
     <string name="tracking_link">Tracking link</string>
+    <string name="set_new_pin">Set New Pin</string>
+    <string name="confirm">Confirm</string>
+    <string name="i_accept">I Accept</string>
+    <string name="sweep_account_consent_submitted_successfully">Sweep account consent submitted successfully</string>
+    <string name="your_account_will_be_opened_once_your_eod_balance_crosses_1_95_000">Your account will be opened once your\nEOD balance crosses ₹ 1,95,000.</string>
+    <string name="pull_money">Pull Money</string>
+    <string name="request_statement">Request Statement</string>
+    <string name="view_statement">View Statement</string>
+    <string name="view">View</string>
 
 
 </resources>

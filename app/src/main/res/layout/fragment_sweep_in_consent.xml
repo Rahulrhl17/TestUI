@@ -67,7 +67,7 @@
         android:layout_width="0dp"
         android:layout_height="55dp"
         android:layout_marginTop="28dp"
-        android:text="@string/update"
+        android:text="@string/i_accept"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/cardView"

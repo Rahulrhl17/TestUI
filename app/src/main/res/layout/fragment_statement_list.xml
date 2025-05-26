@@ -39,8 +39,47 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="10"
             tools:listitem="@layout/layout_transaction" />
 
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnViewCardDetails"
+        style="@style/OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/email"
+        android:textAllCaps="false"
+        android:textColor="@color/button_blue"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRequestPhysicalCard"
+        app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintVertical_bias=".8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRequestPhysicalCard"
+        style="@style/SolidButton"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/download"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnViewCardDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnViewCardDetails"
+        app:layout_constraintTop_toTopOf="@+id/btnViewCardDetails"
+        app:strokeColor="@color/white" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
