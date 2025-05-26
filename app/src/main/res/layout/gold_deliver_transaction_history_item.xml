@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CardViewStyle"
+    android:layout_marginBottom="@dimen/dimen_16">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_16"
+    >
+ <ImageView
+     android:id="@+id/goldStatusIcon"
+     android:layout_width="@dimen/dimen_37"
+     android:layout_height="@dimen/dimen_27"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     android:src="@drawable/ic_sell_gold"/>
+    <TextView
+        android:id="@+id/txnType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Txn Type: Buy Gold"
+        android:textSize="@dimen/text_14"
+        style="@style/WorkSansMedium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/goldStatusIcon"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:textColor="@color/text_colors"
+        app:layout_constraintEnd_toStartOf="@id/gram"
+        android:layout_marginEnd="@dimen/dimen_10"
+        />
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="2023-09-04 17:50:16"
+        android:textSize="@dimen/text_11"
+        style="@style/WorkSansRegular"
+        android:layout_marginTop="@dimen/dimen_2"
+        app:layout_constraintTop_toBottomOf="@id/txnType"
+        app:layout_constraintStart_toEndOf="@id/goldStatusIcon"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:textColor="@color/text_color_grey"
+        app:layout_constraintEnd_toStartOf="@id/gram"
+        android:layout_marginEnd="@dimen/dimen_10"
+        />
+    <TextView
+        android:id="@+id/txnId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Txn Id: 32230067"
+        android:textSize="@dimen/text_11"
+        style="@style/WorkSansRegular"
+        android:layout_marginTop="@dimen/dimen_6"
+        app:layout_constraintTop_toBottomOf="@id/dateTime"
+        app:layout_constraintStart_toEndOf="@id/goldStatusIcon"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:textColor="@color/text_colors"
+        app:layout_constraintEnd_toStartOf="@id/gram"
+        android:layout_marginEnd="@dimen/dimen_10"
+        />
+
+    <TextView
+        android:id="@+id/gram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="0.07 gm"
+        android:textSize="@dimen/text_14"
+        style="@style/WorkSansSemiBold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/text_colors"
+        app:layout_constraintEnd_toStartOf="@id/icon"
+        android:layout_marginEnd="@dimen/dimen_18"
+
+        />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="₹ 1,000"
+        android:textSize="@dimen/text_14"
+        style="@style/WorkSansSemiBold"
+        app:layout_constraintTop_toBottomOf="@id/gram"
+        app:layout_constraintEnd_toStartOf="@id/icon"
+        android:textColor="@color/text_colors"
+        android:layout_marginEnd="@dimen/dimen_18"
+
+        />
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_arrow_red"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

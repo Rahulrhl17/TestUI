@@ -32,4 +32,17 @@
     <dimen name="_13dp">13dp</dimen>
     <dimen name="_34dp">34dp</dimen>
     <dimen name="dimen_11">11dp</dimen>
+    <dimen name="dimen_31">31dp</dimen>
+    <dimen name="dimen_5">5dp</dimen>
+    <dimen name="dimen_29">29dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_26">26dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_21">21dp</dimen>
+    <dimen name="dimen_150">150dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_56">56dp</dimen>
+    <dimen name="dimen_209">209dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
 </resources>

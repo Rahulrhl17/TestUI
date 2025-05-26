@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_22"
+    >
+    <ImageView
+        android:layout_width="@dimen/dimen_44"
+        android:layout_height="4dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_bottom_sheet_drag_handling"
+        android:layout_marginTop="@dimen/dimen_6"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_18"
+        android:paddingEnd="@dimen/dimen_18"
+        android:paddingTop="@dimen/dimen_24"
+        android:paddingBottom="@dimen/dimen_24"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:background="@drawable/bottomsheet_dialog_curve_shape"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center_horizontal"
+            style="@style/WorkSansSemiBold"
+            android:text="@string/info"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_colors"
+            />
+        <TextView
+            android:id="@+id/productId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text="Product ID : 300"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_21"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text="Description : 5 gram safegold bar(99.99%)"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_4"
+            />
+        <TextView
+            android:id="@+id/metalWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text="Metal Weight : 5.0000"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_4"
+            />
+        <TextView
+            android:id="@+id/brandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text="Brand name : Digital gold India pvt. ltd."
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_4"
+            />
+        <TextView
+            android:id="@+id/typeOfMetal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text="Type of metal : Yellow gold"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_4"
+            />
+        <TextView
+            android:id="@+id/makingCharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text="Making charges : ₹ 919"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansMedium"
+            android:text="@string/highlights"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_18"/>
+
+        <TextView
+            android:id="@+id/highlights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            style="@style/WorkSansRegular"
+            android:text=". Safegold coins are set in 24 Karat yellow gold \n\n.Guaranteed weight and purity: specially manufactured in state of the art facilities, with zero negative tolerance for weight and purity.\n\n.Sealed in international quality packaging with a unique serial number, ensures foolproof quality and complete traceability for each coin"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/text_colors"
+            android:layout_marginTop="@dimen/dimen_4"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/okayButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44"
+            app:layout_constraintTop_toBottomOf="@id/termsCondition"
+            style="@style/SolidButton"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:text="@string/okay"
+            android:textSize="@dimen/text_16"
+            />
+
+    </LinearLayout>
+</LinearLayout>
