@@ -5,6 +5,7 @@ import com.example.testui.models.ProcessSecurityRequest
 import com.example.testui.models.ApiResponse
 import com.example.testui.models.MasterRequest
 import com.example.testui.models.RegistrationRequest
+import com.example.testui.models.SimBindingRequest
 import com.example.testui.models.VkycRequest
 import com.example.testui.utils.Resource
 import javax.inject.Inject
@@ -23,6 +24,7 @@ class LoginRegistrationRepository @Inject constructor(private val apiService: Ap
             Resource.Error("Exception: ${e.message}")
         }
     }
+
     suspend fun vkycService(apiRequest: VkycRequest): Resource<ApiResponse> {
         return try {
             val response = apiService.vkycService(apiRequest)
@@ -35,6 +37,7 @@ class LoginRegistrationRepository @Inject constructor(private val apiService: Ap
             Resource.Error("Exception: ${e.message}")
         }
     }
+
     suspend fun vkycMaster(apiRequest: MasterRequest): Resource<ApiResponse> {
         return try {
             val response = apiService.vkycMaster(apiRequest)
@@ -47,17 +50,29 @@ class LoginRegistrationRepository @Inject constructor(private val apiService: Ap
             Resource.Error("Exception: ${e.message}")
         }
     }
-    suspend fun Registration(apiRequest: RegistrationRequest) : Resource<ApiResponse> {
+
+    suspend fun Registration(apiRequest: RegistrationRequest): Resource<ApiResponse> {
         return try {
             val response = apiService.registration(apiRequest)
-            if(response.isSuccessful && response.body() != null){
+            if (response.isSuccessful && response.body() != null) {
                 Resource.Success(response.body()!!)
-            }
-            else {
+            } else {
                 Resource.Error("Error: ${response.code()} ${response.message()}")
             }
+        } catch (e: Exception) {
+            Resource.Error("Registration Exception : ${e.message}")
         }
-        catch (e: Exception){
+    }
+
+    suspend fun simBinding(apiRequest: SimBindingRequest): Resource<ApiResponse> {
+        return try {
+            val response = apiService.simBinding(apiRequest)
+            if (response.isSuccessful && response.body() != null) {
+                Resource.Success(response.body()!!)
+            } else {
+                Resource.Error("Error: ${response.code()} ${response.message()}")
+            }
+        } catch (e: Exception) {
             Resource.Error("Registration Exception : ${e.message}")
         }
     }

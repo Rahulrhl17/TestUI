@@ -8,6 +8,7 @@ import com.example.testui.models.ProcessSecurityRequest
 import com.example.testui.models.ApiResponse
 import com.example.testui.models.MasterRequest
 import com.example.testui.models.RegistrationRequest
+import com.example.testui.models.SimBindingRequest
 import com.example.testui.models.VkycRequest
 import com.example.testui.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -15,7 +16,8 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginRegistrationViewModel @Inject constructor(private val repository: LoginRegistrationRepository) : ViewModel()  {
+class LoginRegistrationViewModel @Inject constructor(private val repository: LoginRegistrationRepository) :
+    ViewModel() {
 
     private val _apiResponse = MutableLiveData<Resource<ApiResponse>>()
     val apiResponse: LiveData<Resource<ApiResponse>> = _apiResponse
@@ -33,6 +35,7 @@ class LoginRegistrationViewModel @Inject constructor(private val repository: Log
             }
         }
     }
+
     fun vkycServiceRequest(apiRequest: VkycRequest) {
         viewModelScope.launch {
             _apiResponse.postValue(Resource.Loading())
@@ -58,14 +61,26 @@ class LoginRegistrationViewModel @Inject constructor(private val repository: Log
             }
         }
     }
-    fun Registration(apiRequest : RegistrationRequest) {
+
+    fun Registration(apiRequest: RegistrationRequest) {
         viewModelScope.launch {
             _apiResponse.postValue(Resource.Loading())
             try {
                 val result = repository.Registration(apiRequest)
                 _apiResponse.postValue(result)
+            } catch (e: Exception) {
+                _apiResponse.postValue(Resource.Error("ViewModel Exception : ${e.message}"))
             }
-            catch (e : Exception){
+        }
+    }
+
+    fun simBinding(apiRequest: SimBindingRequest) {
+        viewModelScope.launch {
+            _apiResponse.postValue(Resource.Loading())
+            try {
+                val result = repository.simBinding(apiRequest)
+                _apiResponse.postValue(result)
+            } catch (e: Exception) {
                 _apiResponse.postValue(Resource.Error("ViewModel Exception : ${e.message}"))
             }
         }

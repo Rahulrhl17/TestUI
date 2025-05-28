@@ -9,7 +9,7 @@ object AppConstants {
     const val PROCESS_SECURITY_REQUEST="/CAUIService/NewUIServices/PaymentBankMobile.WebUI.Security/UISecurityService.svc/ProcessSecurityRequest"
     const val VKYC_SERVICE="/CAVKYServiceUIService/VKYCServiceUIService.svc/VKYCService"
     const val MASTER="/CAUIservice/UIservice.svc/VKYCMaster"
-    const val SIM_BINDING=""
+    const val SIM_BINDING="/CASimBindingUIService/SimBindingUIService.svc/SimBinding"
     const val REGISTRATION = "/CAUIservice/UIservice.svc/Registration"
     //REQUEST_DATA_KEYS
     const val NEW_TPIN = "newTpin"
