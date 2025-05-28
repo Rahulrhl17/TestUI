@@ -6,12 +6,14 @@ import com.example.testui.constants.AppConstants.PROCESS_SECURITY_REQUEST
 import com.example.testui.constants.AppConstants.SIM_BINDING
 import com.example.testui.constants.AppConstants.UPI_PROCESS
 import com.example.testui.constants.AppConstants.UTILITY
+import com.example.testui.constants.AppConstants.REGISTRATION
 import com.example.testui.constants.AppConstants.VKYC_SERVICE
 import com.example.testui.models.ProcessSecurityRequest
 import com.example.testui.models.ApiResponse
 import com.example.testui.models.BillPaymentRequest
 import com.example.testui.models.MasterRequest
 import com.example.testui.models.UtilityRequest
+import com.example.testui.models.RegistrationRequest
 import com.example.testui.models.VkycRequest
 import retrofit2.Response
 import retrofit2.http.Body
@@ -38,4 +40,7 @@ interface ApiService {
 
         @POST(UPI_PROCESS)
         suspend fun upiProcess(@Body billPaymentRequest: BillPaymentRequest): Response<ApiResponse>
+        @POST(REGISTRATION)
+        suspend fun registration(@Body registrationRequest: RegistrationRequest) : Response<ApiResponse>
+
 }
