@@ -1,8 +1,7 @@
 package com.example.testui.constants
 
 object AppConstants {
-    //BASE_URL_UAT
-    const val BASE_URL = "http://103.1.112.205:8018"
+
     //SHARED_PREF
     const val PREFS_NAME = "fino_sp"
     //ENDPOINTS

@@ -1,6 +1,7 @@
 package com.example.testui.data.network
 
 import android.content.Context
+import com.example.testui.BuildConfig
 import com.example.testui.constants.AppConstants
 import dagger.Module
 import dagger.Provides
@@ -43,7 +44,7 @@ object AppModule {
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(AppConstants.BASE_URL)
+            .baseUrl(BuildConfig.BASE_URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

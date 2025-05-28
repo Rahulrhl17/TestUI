@@ -18,14 +18,24 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildFeatures {
+        buildConfig=true
+    }
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "BASE_URL", "\"https://finopay.finopaymentbank.in\"")
+            signingConfig = signingConfigs.getByName("debug")
+
+        }
+        debug {
+            applicationIdSuffix = ".debug" // Makes the package name unique for debug installs
+            isDebuggable = true
+            buildConfigField("String", "BASE_URL", "\"http://103.1.112.205:8018\"")
         }
     }
     compileOptions {

@@ -40,6 +40,7 @@ interface ApiService {
 
         @POST(UPI_PROCESS)
         suspend fun upiProcess(@Body billPaymentRequest: BillPaymentRequest): Response<ApiResponse>
+
         @POST(REGISTRATION)
         suspend fun registration(@Body registrationRequest: RegistrationRequest) : Response<ApiResponse>
 
