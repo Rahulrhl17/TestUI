@@ -1,5 +1,8 @@
 package com.example.testui.models
 
+/**
+ * Created by Shivani Jain on 27/5/2025.
+ */
 data class VkycRequest(val MethodId: Int,
                       val IsEncrypt: Boolean=false,
                       val RequestId: String?="",
