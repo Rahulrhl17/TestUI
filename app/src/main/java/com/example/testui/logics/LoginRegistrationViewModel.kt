@@ -126,15 +126,5 @@ class LoginRegistrationViewModel @Inject constructor(private val repository: Log
         }
     }
 
-    fun simBinding(apiRequest: SimBindingRequest) {
-        viewModelScope.launch {
-            _apiResponse.postValue(Resource.Loading())
-            try {
-                val result = repository.simBinding(apiRequest)
-                _apiResponse.postValue(result)
-            } catch (e: Exception) {
-                _apiResponse.postValue(Resource.Error("ViewModel Exception : ${e.message}"))
-            }
-        }
-    }
+
 }

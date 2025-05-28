@@ -13,6 +13,7 @@ object AppConstants {
     const val BILL_PAYMENT="/CAUIservice/UIservice.svc/BillPayment"
     const val UPI_PROCESS="/PBUPISwitchSandBoxUIService/UPISwitchSandBoxUIService.svc/UPIProcessRequest"
     const val REGISTRATION = "/CAUIservice/UIservice.svc/Registration"
+
     //REQUEST_DATA_KEYS
     const val NEW_TPIN = "newTpin"
     const val CUSTOMER_NUMBER = "customerNumber"

@@ -3,9 +3,11 @@ package com.example.testui.logics
 import com.example.testui.data.network.ApiService
 import com.example.testui.models.ProcessSecurityRequest
 import com.example.testui.models.ApiResponse
+import com.example.testui.models.BillPaymentRequest
 import com.example.testui.models.MasterRequest
 import com.example.testui.models.RegistrationRequest
 import com.example.testui.models.SimBindingRequest
+import com.example.testui.models.UtilityRequest
 import com.example.testui.models.VkycRequest
 import com.example.testui.utils.Resource
 import javax.inject.Inject
@@ -115,16 +117,5 @@ class LoginRegistrationRepository @Inject constructor(private val apiService: Ap
         }
     }
 
-    suspend fun simBinding(apiRequest: SimBindingRequest): Resource<ApiResponse> {
-        return try {
-            val response = apiService.simBinding(apiRequest)
-            if (response.isSuccessful && response.body() != null) {
-                Resource.Success(response.body()!!)
-            } else {
-                Resource.Error("Error: ${response.code()} ${response.message()}")
-            }
-        } catch (e: Exception) {
-            Resource.Error("Registration Exception : ${e.message}")
-        }
-    }
+
 }
