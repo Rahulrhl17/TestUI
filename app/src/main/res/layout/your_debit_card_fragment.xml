@@ -25,7 +25,7 @@
                 android:textSize="18sp"
                 android:visibility="visible"
                 android:layout_marginHorizontal="20dp"
-                android:text="Your Debit Card"/>
+                android:text="@string/your_debit_card"/>
 
 
             <TextView
@@ -35,7 +35,7 @@
                 android:textColor="@color/gray"
                 android:textSize="13sp"
                 android:layout_marginHorizontal="20dp"
-                android:text="Use a Fino RuPay Platinum debit card to make smart purchases and to earn rewards on the go"
+                android:text="@string/use_a_fino_rupay_platinum_debit_card_to_make_smart_purchases_and_to_earn_rewards_on_the_go"
                 style="@style/WorkSansRegular"/>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -86,7 +86,7 @@
                 android:visibility="visible"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="20dp"
-                android:text="FinoPay Digital Savings Account"/>
+                android:text="@string/finopay_digital_savings_account"/>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/debit_card_features_list"
@@ -102,7 +102,7 @@
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:visibility="visible"
-                android:text="Select name on card*"
+                android:text="@string/select_name_on_card"
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="14dp"/>
 
@@ -123,7 +123,7 @@
                 android:layout_height="54dp"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="20dp"
-                android:text="Proceed"
+                android:text="@string/proceed"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

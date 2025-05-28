@@ -26,7 +26,7 @@
             android:textSize="16sp"
             android:textColor="@color/black"
             style="@style/WorkSansSemiBold"
-            android:text="Your security is important to us." />
+            android:text="@string/your_security_is_important_to_us" />
 
         <TextView
             android:id="@+id/select_category"
@@ -36,7 +36,7 @@
             android:textColor="@color/black"
             android:layout_marginTop="8dp"
             style="@style/WorkSansRegular"
-            android:text="Please select your favourite color to get started." />
+            android:text="@string/please_select_your_favourite_color_to_get_started" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/security_questions_list"

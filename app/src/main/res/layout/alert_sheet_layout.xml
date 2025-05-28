@@ -26,7 +26,7 @@
         android:layout_gravity="center_horizontal"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:text="VPN Detected!"
+        android:text="@string/vpn_detected"
         app:layout_constraintTop_toBottomOf="@id/alert_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         app:layout_constraintBottom_toTopOf="@+id/okay"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="A VPN connection has been detected on your device. Disable the VPN connection before proceeding to ensure security"
+        android:text="@string/a_vpn_connection_has_been_detected_on_your_device_disable_the_vpn_connection_before_proceeding_to_ensure_security"
         style="@style/WorkSansRegular"/>
     
     <com.google.android.material.button.MaterialButton
@@ -56,7 +56,7 @@
         android:layout_marginHorizontal="40dp"
         style="@style/OutlinedButton"
         app:strokeWidth="1dp"
-        android:text="Okay"
+        android:text="@string/okay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

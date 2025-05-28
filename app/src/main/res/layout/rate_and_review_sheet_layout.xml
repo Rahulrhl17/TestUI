@@ -35,7 +35,7 @@
         android:textSize="18sp"
         android:layout_marginTop="16dp"
         android:visibility="visible"
-        android:text="Rate your experience"/>
+        android:text="@string/rate_your_experience"/>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -73,7 +73,7 @@
                 android:textSize="12sp"
                 android:visibility="visible"
                 android:layout_gravity="center_horizontal"
-                android:text="Very Poor"/>
+                android:text="@string/very_poor"/>
 
         </LinearLayout>
 
@@ -102,7 +102,7 @@
                 android:textSize="12sp"
                 android:visibility="visible"
                 android:layout_gravity="center_horizontal"
-                android:text="Poor"/>
+                android:text="@string/poor"/>
 
         </LinearLayout>
 
@@ -131,7 +131,7 @@
                 android:textSize="12sp"
                 android:visibility="visible"
                 android:layout_gravity="center_horizontal"
-                android:text="Average"/>
+                android:text="@string/average"/>
 
         </LinearLayout>
 
@@ -160,7 +160,7 @@
                 android:textSize="12sp"
                 android:visibility="visible"
                 android:layout_gravity="center_horizontal"
-                android:text="Good"/>
+                android:text="@string/good"/>
 
         </LinearLayout>
 
@@ -189,7 +189,7 @@
                 android:textSize="12sp"
                 android:visibility="visible"
                 android:layout_gravity="center_horizontal"
-                android:text="Very Good"/>
+                android:text="@string/very_good"/>
 
         </LinearLayout>
 
@@ -208,7 +208,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="38dp"
         android:visibility="visible"
-        android:text="What can we improve?"/>
+        android:text="@string/what_can_we_improve"/>
 
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/improve_spinner"
@@ -238,7 +238,7 @@
             style="@style/OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:text="I'll do it later"
+            android:text="@string/i_ll_do_it_later"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -252,7 +252,7 @@
             style="@style/SolidButton"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:text="Submit"
+            android:text="@string/submit"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

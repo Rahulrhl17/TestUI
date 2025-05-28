@@ -25,7 +25,7 @@
         android:layout_marginTop="25dp"
         android:textSize="18sp"
         android:visibility="visible"
-        android:text="Open Account"/>
+        android:text="@string/open_account"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
@@ -63,7 +63,7 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:visibility="visible"
-                android:text="Refer your friends"/>
+                android:text="@string/refer_your_friends"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
                 style="@style/WorkSansRegular"
                 android:textColor="@color/gray"
                 android:textSize="12sp"
-                android:text="Invite your friends and earn exciting rewards"/>
+                android:text="@string/invite_your_friends_and_earn_exciting_rewards"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -99,7 +99,7 @@
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Send Invitation"/>
+                        android:text="@string/send_invitation"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
                         style="@style/WorkSansRegular"
                         android:textColor="@color/gray"
                         android:textSize="12sp"
-                        android:text="Send your referral link to your friends"/>
+                        android:text="@string/send_your_referral_link_to_your_friends"/>
 
                 </LinearLayout>
 
@@ -144,7 +144,7 @@
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Register"/>
+                        android:text="@string/register"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
                         style="@style/WorkSansRegular"
                         android:textColor="@color/gray"
                         android:textSize="12sp"
-                        android:text="Let them register for FinoPay"/>
+                        android:text="@string/let_them_register_for_finopay"/>
 
                 </LinearLayout>
 
@@ -197,7 +197,7 @@
                         style="@style/WorkSansRegular"
                         android:textColor="@color/gray"
                         android:textSize="12sp"
-                        android:text="After their registration, get ₹150 in your FinoPay account"/>
+                        android:text="@string/after_their_registration_get_150_in_your_finopay_account"/>
 
                 </LinearLayout>
 
@@ -226,7 +226,7 @@
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:visibility="visible"
-                        android:text="Referral code: "
+                        android:text="@string/referral_code"
                         />
                     <TextView
                         android:layout_width="wrap_content"
@@ -267,7 +267,7 @@
         android:layout_height="54dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginBottom="22dp"
-        android:text="Done"
+        android:text="@string/done"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

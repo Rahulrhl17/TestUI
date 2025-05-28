@@ -121,7 +121,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Total Amount"
+                        android:text="@string/total_amount"
                         android:textSize="@dimen/text_12"
                         style="@style/WorkSansRegular"
                         android:layout_marginTop="@dimen/dimen_16"
@@ -144,7 +144,7 @@
                         android:textColor="@color/text_colors"
                         android:textSize="14sp"
                         app:buttonTint="@color/primary"
-                        android:text="I agree to the Terms and Conditions"
+                        android:text="@string/i_agree_to_the_terms_and_conditions"
                         android:layout_height="wrap_content"/>
 
 

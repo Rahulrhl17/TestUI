@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginTop="@dimen/dimen_18">
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/profile"
@@ -37,7 +38,8 @@
         app:layout_constraintTop_toBottomOf="@id/userName"
         app:layout_constraintStart_toEndOf="@id/profile"
         style="@style/WorkSansRegular"
-        android:text="Today, 9:30 PM"
+        android:text="@string/today"
+        tools:text="Today, 9:30 PM"
         android:textSize="@dimen/text_12"
         android:textColor="@color/gray2"
         android:layout_marginStart="@dimen/dimen_16"
@@ -73,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@id/credit_debit_icon"
         app:layout_constraintEnd_toEndOf="parent"
         style="@style/WorkSansMedium"
-        android:text="Declined"
+        android:text="@string/declined"
         android:textSize="@dimen/text_12"
         android:textColor="@color/fab_bg"
         android:layout_marginStart="@dimen/dimen_16"

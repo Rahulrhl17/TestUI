@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:paddingBottom="@dimen/dimen_32">
     <include layout="@layout/header_layout"
         android:id="@+id/headerLayout"/>
@@ -36,7 +37,8 @@
                 android:id="@+id/currentBalance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Current Balance : 0.0079 gm"
+                tools:text="Current Balance : 0.0079 gm"
+                android:text="@string/current_balance"
                 android:textSize="@dimen/text_14"
                 style="@style/WorkSansMedium"
                 android:textColor="@color/text_colors"
@@ -85,7 +87,7 @@
                         android:id="@+id/error"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Insufficient gold balance"
+                        android:text="@string/insufficient_gold_balance"
                         android:textSize="@dimen/text_12"
                         style="@style/WorkSansRegular"
                         android:layout_marginStart="@dimen/dimen_8"

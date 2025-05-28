@@ -30,7 +30,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:visibility="visible"
-                android:text="Enter your Aadhaar and PAN Details"/>
+                android:text="@string/enter_your_aadhaar_and_pan_details"/>
 
 
             <TextView
@@ -40,7 +40,7 @@
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:visibility="visible"
-                android:text="Enter Aadhaar number*"
+                android:text="@string/enter_aadhaar_number"
                 android:layout_marginTop="14dp"/>
 
             <EditText
@@ -62,7 +62,7 @@
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:visibility="visible"
-                android:text="Enter PAN number*"
+                android:text="@string/enter_pan_number"
                 android:layout_marginTop="14dp"/>
 
             <EditText
@@ -84,7 +84,7 @@
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:visibility="visible"
-                android:text="Politacally exposed person*"
+                android:text="@string/politically_exposed_person"
                 android:layout_marginTop="14dp"/>
 
 
@@ -98,7 +98,7 @@
                     android:id="@+id/political_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Yes"
+                    android:text="@string/yes"
                     android:textAppearance="@style/WorkSansSemiBold"
                     android:textColor="@color/black"
                     app:buttonTint="@color/primary"
@@ -110,7 +110,7 @@
                     android:id="@+id/political_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No"
+                    android:text="@string/no"
                     android:layout_marginStart="20dp"
                     android:textColor="@color/black"
                     app:buttonTint="@color/primary"
@@ -128,7 +128,7 @@
                 android:textColor="@color/gray"
                 android:textSize="14sp"
                 android:visibility="visible"
-                android:text="Use Aadhaar for Payments (AePS)*"
+                android:text="@string/use_aadhaar_for_payments_aeps"
                 />
 
 
@@ -142,7 +142,7 @@
                     android:id="@+id/aeps_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Enable"
+                    android:text="@string/enable"
                     android:textAppearance="@style/WorkSansSemiBold"
                     android:textColor="@color/black"
                     app:buttonTint="@color/primary"
@@ -154,7 +154,7 @@
                     android:id="@+id/aeps_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Disable"
+                    android:text="@string/disable"
                     android:layout_marginStart="20dp"
                     android:textColor="@color/black"
                     app:buttonTint="@color/primary"
@@ -171,7 +171,7 @@
                 android:textColor="@color/primary"
                 android:textSize="14sp"
                 app:buttonTint="@color/lightGray"
-                android:text="FATCA Declaration"
+                android:text="@string/fatca_declaration"
                 android:paddingStart="8dp"
                 android:layout_height="wrap_content"/>
 
@@ -181,7 +181,7 @@
                 android:textColor="@color/gray"
                 android:textSize="12sp"
                 app:buttonTint="@color/lightGray"
-                android:text="I hereby provide my consent to Fino Payments Bank to fetch my KYC details using Aadhaar from UIDAI and validate my PAN from NSDL for the purpose of account opening. I have not opened Aadhaar OTP based account with any other bank in India and will not apply for it in future as well I, give my consent to download my KYC Records from the Central KYC Registry (CKYCR), only for the purpose of verification of my identity and address from the database of CKYCR Registry."
+                android:text="@string/i_hereby_provide_my_consent_to_fino_payments_bank_to_fetch_my_kyc_details_using_aadhaar_from_uidai_and_validate_my_pan_from_nsdl_for_the_purpose_of_account_opening_i_have_not_opened_aadhaar_otp_based_account_with_any_other_bank_in_india_and_will_not_apply_for_it_in_future_as_well_i_give_my_consent_to_download_my_kyc_records_from_the_central_kyc_registry_ckycr_only_for_the_purpose_of_verification_of_my_identity_and_address_from_the_database_of_ckycr_registry"
                 android:paddingStart="8dp"
                 android:gravity="top"
                 android:layout_height="wrap_content"/>
@@ -194,7 +194,7 @@
                 android:layout_height="54dp"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="20dp"
-                android:text="Proceed"
+                android:text="@string/proceed"
                 android:textSize="16sp"
                 />
 

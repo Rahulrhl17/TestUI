@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:text="Use Aadhaar for payments (AePS)"
+        android:text="@string/use_aadhaar_for_payments_aeps"
         style="@style/WorkSansSemiBold"/>
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_marginVertical="10dp"
         android:textColor="@color/gray"
         android:textSize="13sp"
-        android:text="I hereby give my explicit consent to Fino Payments Bank for Enabling Aeps Debit Service in my account. I confirm that the Aeps product features along with terms and conditions have been explained to me in detail and I agree to all the terms and conditions."
+        android:text="@string/i_hereby_give_my_explicit_consent_to_fino_payments_bank_for_enabling_aeps_debit_service_in_my_account_i_confirm_that_the_aeps_product_features_along_with_terms_and_conditions_have_been_explained_to_me_in_detail_and_i_agree_to_all_the_terms_and_conditions"
         style="@style/WorkSansRegular"/>
 
     <com.google.android.material.button.MaterialButton
@@ -31,7 +31,7 @@
         android:layout_height="54dp"
         style="@style/OutlinedButton"
         app:strokeWidth="1dp"
-        android:text="Okay"
+        android:text="@string/okay"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:textSize="16sp"

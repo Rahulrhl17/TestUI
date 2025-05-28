@@ -56,7 +56,7 @@
                 android:layout_marginStart="@dimen/dimen_8"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:hint="Search by category or request Id  "
+                android:hint="@string/search_by_category_or_request_id"
                 android:textSize="@dimen/text_12"
                 style="@style/WorkSansRegular"
                 android:textColorHint="@color/search_hint"

@@ -157,7 +157,7 @@
         android:layout_marginTop="@dimen/dimen_32"
         android:gravity="top"
         app:buttonTint="@color/finoBlue"
-        android:text="I hereby provide my consent for sharing my name, email, mobile, pan, pincode and last 4 digit of Aadhaar with digital India private limited(Safegold) for the purpose of using its Digital Gold Services. I am informed that this is third party offering provided by SafeGold and Fino Payment Bank is merely being a payment facilitator in the entire scope of services"/>
+        android:text="@string/digi_gold_registeration_terms"/>
     <com.google.android.material.button.MaterialButton
         android:id="@+id/proceedButton"
         android:layout_width="match_parent"

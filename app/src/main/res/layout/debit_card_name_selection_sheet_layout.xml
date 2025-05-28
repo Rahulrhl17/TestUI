@@ -12,7 +12,7 @@
         style="@style/WorkSansSemiBold"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:text="Select name on card"/>
+        android:text="@string/select_name_on_card"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

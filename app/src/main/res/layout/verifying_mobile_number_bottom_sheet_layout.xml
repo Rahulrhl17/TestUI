@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center">
 
     <ImageView
         android:id="@+id/verifying_image"
@@ -26,7 +25,7 @@
         android:layout_gravity="center_horizontal"
         android:textColor="@color/black"
         android:textSize="18sp"
-        android:text="Please wait while we verify your mobile number"
+        android:text="@string/please_wait_while_we_verify_your_mobile_number"
         app:layout_constraintTop_toBottomOf="@id/verifying_image"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginHorizontal="80dp"
@@ -48,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@id/verifying_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="This may take a few seconds. Please don't exit the app or press the back button."
+        android:text="@string/this_may_take_a_few_seconds_please_don_t_exit_the_app_or_press_the_back_button"
         style="@style/WorkSansRegular"/>
 
     <TextView
@@ -64,7 +63,8 @@
         app:layout_constraintTop_toBottomOf="@id/verifying_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="+91 85452 85452 is linked to a FinoPay account."
+        android:text="@string/_is_linked_to_a_finopay_account"
+        tools:text="+91 85452 85452 is linked to a FinoPay account."
         style="@style/WorkSansRegular"/>
 
     <LinearLayout
@@ -96,7 +96,7 @@
             android:textColor="@color/gray"
             android:textSize="14sp"
             android:layout_marginStart="10dp"
-            android:text="Redirecting"
+            android:text="@string/redirecting"
             android:includeFontPadding="false"
             style="@style/WorkSansSemiBold"/>
         
@@ -119,7 +119,7 @@
             style="@style/OutlinedButton"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:text="Switch SIM"
+            android:text="@string/switch_sim"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +133,7 @@
             style="@style/SolidButton"
             android:layout_width="0dp"
             android:layout_height="54dp"
-            android:text="Open Account"
+            android:text="@string/open_account"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

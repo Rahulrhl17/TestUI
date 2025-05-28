@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginBottom="32dp"
-            android:text="Verify Mobile Number"
+            android:text="@string/verify_mobile_number"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -75,7 +75,7 @@
                         style="@style/WorkSansSemiBold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Send SMS"
+                        android:text="@string/send_sms"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -84,7 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Please send us the pre-composed SMS to verify your mobile number"
+                        android:text="@string/please_send_us_the_pre_composed_sms_to_verify_your_mobile_number"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -117,7 +117,7 @@
                         style="@style/WorkSansSemiBold"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="If you have Dual SIM"
+                        android:text="@string/if_you_have_dual_sim"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -126,7 +126,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Select SIM linked to your Aadhaar card"
+                        android:text="@string/select_sim_linked_to_your_aadhaar_card"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -175,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="8dp"
-                    android:text="Standard SMS Charges may apply"
+                    android:text="@string/standard_sms_charges_may_apply"
                     android:textColor="@color/gray"
                     android:textSize="12sp" />
 
@@ -196,7 +196,7 @@
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="21dp"
         android:layout_marginBottom="20dp"
-        android:text="Send SMS"
+        android:text="@string/send_sms"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

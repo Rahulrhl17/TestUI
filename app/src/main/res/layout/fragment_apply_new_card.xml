@@ -27,7 +27,7 @@
         android:layout_marginTop="20dp"
         android:textSize="16sp"
         android:backgroundTint="@color/white"
-        android:text="Apply for a new card"
+        android:text="@string/apply_for_a_new_card"
         android:textColor="@color/button_blue"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView"

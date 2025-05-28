@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/indigo">
 
     <ImageView
@@ -27,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/done_image"
-        android:text="Your Digital Savings Account is opened successfully !!"/>
+        android:text="@string/your_digital_savings_account_is_opened_successfully"/>
 
     <TextView
         android:id="@+id/done_subtext"
@@ -43,7 +44,7 @@
         app:layout_constraintStart_toStartOf="@id/done_headline"
         app:layout_constraintEnd_toEndOf="@id/done_headline"
         app:layout_constraintTop_toBottomOf="@id/done_headline"
-        android:text="Pay annual fee and complete video KYC to avail all banking services"/>
+        android:text="@string/pay_annual_fee_and_complete_video_kyc_to_avail_all_banking_services"/>
 
 
     <androidx.cardview.widget.CardView
@@ -82,7 +83,7 @@
                         android:layout_height="wrap_content"
                         style="@style/WorkSansBold"
                         android:background="@color/almostWhite"
-                        android:text="25 OTT"
+                        android:text="@string/_25_ott"
                         android:paddingHorizontal="6dp"
                         android:textSize="16sp"
                         android:textColor="@color/darkBlue"/>
@@ -93,7 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/WorkSansBold"
-                    android:text="worth ₹ 5,915*"
+                    android:text="@string/worth_5_915"
                     android:paddingHorizontal="6dp"
                     android:textSize="16sp"
                     android:textColor="@color/white"/>
@@ -119,7 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/WorkSansBold"
-                    android:text="Cashback"
+                    android:text="@string/cashback"
                     android:textSize="18sp"
                     android:layout_marginBottom="2dp"
                     android:layout_gravity="center_horizontal"
@@ -159,7 +160,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/WorkSansBold"
-                            android:text="on Video KYC"
+                            android:text="@string/on_video_kyc"
                             android:textSize="10sp"
                             android:layout_gravity="center_horizontal"
                             android:textColor="@color/white"/>
@@ -193,7 +194,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             style="@style/WorkSansBold"
-                            android:text="on Referral"
+                            android:text="@string/on_referral"
                             android:textSize="10sp"
                             android:layout_gravity="center_horizontal"
                             android:textColor="@color/white"/>
@@ -225,7 +226,8 @@
         android:layout_height="54dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Pay ₹500"
+        tools:text="Pay ₹500"
+        android:text="@string/pay"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

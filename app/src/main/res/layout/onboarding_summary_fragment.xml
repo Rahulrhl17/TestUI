@@ -31,7 +31,7 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:visibility="visible"
-                    android:text="Personal Details"/>
+                    android:text="@string/personal_details"/>
 
 
                 <LinearLayout
@@ -76,7 +76,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Gender"
+                        android:text="@string/gender"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -84,7 +84,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="54dp"
                         android:textAppearance="@style/WorkSansSemiBold"
-                        android:text="Male"
+                        android:text="@string/male"
                         android:paddingStart="10dp"
                         android:textSize="16sp"
                         app:backgroundTint="@color/gray2"
@@ -97,7 +97,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Nationality"
+                        android:text="@string/nationality"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -105,7 +105,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="54dp"
                         android:textAppearance="@style/WorkSansSemiBold"
-                        android:text="Indian"
+                        android:text="@string/indian"
                         android:textColor="@color/black"
                         android:textSize="16sp"
                         android:paddingStart="10dp"
@@ -123,7 +123,7 @@
                             android:textSize="14sp"
                             android:visibility="visible"
                             android:layout_alignParentStart="true"
-                            android:text="DOB"
+                            android:text="@string/dob"
                             />
 
                         <ImageView
@@ -156,7 +156,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Father's / Husband's name"
+                        android:text="@string/father_s_husband_s_name"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -177,7 +177,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Email ID"
+                        android:text="@string/email_id"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -204,7 +204,7 @@
                             android:textSize="14sp"
                             android:visibility="visible"
                             android:layout_alignParentStart="true"
-                            android:text="Marital Status"
+                            android:text="@string/marital_status"
                             />
 
                         <ImageView
@@ -242,7 +242,7 @@
                             android:textSize="14sp"
                             android:visibility="visible"
                             android:layout_alignParentStart="true"
-                            android:text="Mother's maiden name"
+                            android:text="@string/mother_s_maiden_name"
                             />
 
                         <ImageView
@@ -274,7 +274,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Aadhaar Number"
+                        android:text="@string/aadhaar_number"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -295,7 +295,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="PAN Number"
+                        android:text="@string/pan_number"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -316,7 +316,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Name as per PAN"
+                        android:text="@string/name_as_per_pan"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -337,7 +337,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Mobile Number"
+                        android:text="@string/mobile_number"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -358,7 +358,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Permanent address as per Aadhaar"
+                        android:text="@string/permanent_address_as_per_aadhaar"
                         />
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -385,7 +385,7 @@
                             android:textSize="14sp"
                             android:visibility="visible"
                             android:layout_alignParentStart="true"
-                            android:text="Communication address as per Aadhaar"
+                            android:text="@string/communication_address_as_per_aadhaar"
                             />
 
                         <ImageView
@@ -446,7 +446,7 @@
                         android:textSize="18sp"
                         android:visibility="visible"
                         android:layout_alignParentStart="true"
-                        android:text="Professional Details"/>
+                        android:text="@string/professional_details"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -473,7 +473,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Education qualification*"
+                        android:text="@string/education_qualification"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -493,7 +493,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Occupation*"
+                        android:text="@string/occupation"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -513,7 +513,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Annual Income*"
+                        android:text="@string/annual_income"
                         android:layout_marginTop="14dp"/>
 
                     <com.google.android.material.chip.ChipGroup
@@ -599,7 +599,7 @@
                         android:layout_height="54dp"
                         android:layout_marginHorizontal="40dp"
                         android:layout_marginTop="20dp"
-                        android:text="Save and proceed"
+                        android:text="@string/save_and_proceed"
                         android:textSize="16sp"
                         />
 
@@ -617,7 +617,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Education qualification"
+                        android:text="@string/education_qualification"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -638,7 +638,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Occupation"
+                        android:text="@string/occupation"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -659,7 +659,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Annual Income"
+                        android:text="@string/annual_income"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -707,7 +707,7 @@
                         android:textSize="18sp"
                         android:visibility="visible"
                         android:layout_alignParentStart="true"
-                        android:text="Nominee details"/>
+                        android:text="@string/nominee_details"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -734,7 +734,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="As per RBI guidelines, it is recommended to add a nominee for financial security"
+                        android:text="@string/as_per_rbi_guidelines_it_is_recommended_to_add_a_nominee_for_financial_security"
                         android:layout_marginTop="4dp"/>
 
                     <TextView
@@ -744,7 +744,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Nominee name*"
+                        android:text="@string/nominee_name"
                         android:layout_marginTop="14dp"/>
 
                     <EditText
@@ -755,7 +755,7 @@
                         android:textAppearance="@style/WorkSansSemiBold"
                         android:textSize="16sp"
                         android:textColor="@color/black"
-                        android:hint="Enter nominee's name"
+                        android:hint="@string/enter_nominee_s_name"
                         android:paddingStart="10dp"
                         android:layout_marginTop="8dp"/>
 
@@ -766,7 +766,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Date of birth*"
+                        android:text="@string/date_of_birth"
                         android:layout_marginTop="14dp"/>
 
                     <EditText
@@ -777,7 +777,7 @@
                         android:textAppearance="@style/WorkSansSemiBold"
                         android:textSize="16sp"
                         android:textColor="@color/black"
-                        android:hint="DD/MM/YYYY"
+                        android:hint="@string/dd_mm_yyyy"
                         android:cursorVisible="false"
                         android:focusable="false"
                         android:paddingStart="10dp"
@@ -793,7 +793,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Relationship with account holder*"
+                        android:text="@string/relationship_with_account_holder"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -813,7 +813,7 @@
                         android:textSize="14sp"
                         app:buttonTint="@color/primary"
                         app:checkedState="checked"
-                        android:text="Nominee address same as customer address"
+                        android:text="@string/nominee_address_same_as_customer_address"
                         android:layout_height="wrap_content"/>
 
                     <TextView
@@ -823,7 +823,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Nominee Address*"
+                        android:text="@string/nominee_address"
                         android:layout_marginTop="14dp"/>
 
                     <EditText
@@ -854,7 +854,7 @@
                             android:textColor="@color/black"
                             android:textSize="18sp"
                             android:visibility="visible"
-                            android:text="Guardian Details"/>
+                            android:text="@string/guardian_details"/>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -863,7 +863,7 @@
                             android:textColor="@color/gray"
                             android:textSize="14sp"
                             android:visibility="visible"
-                            android:text="Guardian Name*"
+                            android:text="@string/guardian_name"
                             android:layout_marginTop="14dp"/>
 
                         <EditText
@@ -885,7 +885,7 @@
                             android:textColor="@color/gray"
                             android:textSize="14sp"
                             android:visibility="visible"
-                            android:text="Relation with nominee*"
+                            android:text="@string/relation_with_nominee"
                             android:layout_marginTop="14dp"/>
 
                         <androidx.appcompat.widget.AppCompatSpinner
@@ -905,7 +905,7 @@
                             android:textColor="@color/gray"
                             android:textSize="14sp"
                             android:visibility="visible"
-                            android:text="Guardian DOB*"
+                            android:text="@string/guardian_dob"
                             android:layout_marginTop="14dp"/>
 
                         <EditText
@@ -916,7 +916,7 @@
                             android:textAppearance="@style/WorkSansSemiBold"
                             android:textSize="16sp"
                             android:textColor="@color/black"
-                            android:hint="DD/MM/YYYY"
+                            android:hint="@string/dd_mm_yyyy"
                             android:cursorVisible="false"
                             android:focusable="false"
                             android:paddingStart="10dp"
@@ -932,7 +932,7 @@
                             android:textSize="14sp"
                             app:buttonTint="@color/primary"
                             app:checkedState="checked"
-                            android:text="Guardian address same as customer address"
+                            android:text="@string/guardian_address_same_as_customer_address"
                             android:layout_height="wrap_content"/>
 
                         <TextView
@@ -942,7 +942,7 @@
                             android:textColor="@color/gray"
                             android:textSize="14sp"
                             android:visibility="visible"
-                            android:text="Guardian Address*"
+                            android:text="@string/guardian_address"
                             android:layout_marginTop="14dp"/>
 
                         <EditText
@@ -968,7 +968,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="PIN code*"
+                        android:text="@string/pin_code"
                         android:layout_marginTop="14dp"/>
 
                     <EditText
@@ -992,7 +992,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="City*"
+                        android:text="@string/city"
                         android:layout_marginTop="14dp"/>
 
                     <EditText
@@ -1017,7 +1017,7 @@
                         android:textColor="@color/gray"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="State/Union territory*"
+                        android:text="@string/state_union_territory"
                         android:layout_marginTop="14dp"/>
 
                     <EditText
@@ -1046,7 +1046,7 @@
                             style="@style/OutlinedButton"
                             android:layout_width="0dp"
                             android:layout_height="54dp"
-                            android:text="Skip for now"
+                            android:text="@string/skip_for_now"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -1060,7 +1060,7 @@
                             style="@style/SolidButton"
                             android:layout_width="0dp"
                             android:layout_height="54dp"
-                            android:text="Proceed"
+                            android:text="@string/proceed"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -1086,7 +1086,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Nominee name"
+                        android:text="@string/nominee_name"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1107,7 +1107,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Nominee DOB"
+                        android:text="@string/nominee_dob"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1128,7 +1128,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Relationship with account holder"
+                        android:text="@string/relationship_with_account_holder"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1149,7 +1149,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Nominee Address"
+                        android:text="@string/nominee_address"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1177,7 +1177,7 @@
                             android:textSize="18sp"
                             android:visibility="visible"
                             android:layout_alignParentStart="true"
-                            android:text="Guardian details"/>
+                            android:text="@string/guardian_details"/>
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -1196,7 +1196,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Guardian Name"
+                        android:text="@string/guardian_name"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1217,7 +1217,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Guardian DOB"
+                        android:text="@string/guardian_dob"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1238,7 +1238,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Relationship with account holder"
+                        android:text="@string/relationship_with_account_holder"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1259,7 +1259,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Guardian Address"
+                        android:text="@string/guardian_address"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1303,7 +1303,7 @@
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:visibility="visible"
-                    android:text="Debit card details"/>
+                    android:text="@string/debit_card_details"/>
 
 
                 <LinearLayout
@@ -1318,7 +1318,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Name on Debit card"
+                        android:text="@string/name_on_debit_card"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1339,7 +1339,7 @@
                         android:textColor="@color/gray2"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Address where Debit card will be delivere"
+                        android:text="@string/address_where_debit_card_will_be_delivere"
                         android:layout_marginTop="14dp"/>
 
                     <androidx.appcompat.widget.AppCompatEditText
@@ -1367,7 +1367,7 @@
             style="@style/WorkSansRegular"
             android:textColor="@color/black"
             app:buttonTint="@color/finoBlue"
-            android:text="I hereby agree to the Terms and Conditions laid down by the bank for the account opening process and all the details shared by me are correct."
+            android:text="@string/i_hereby_agree_to_the_terms_and_conditions_laid_down_by_the_bank_for_the_account_opening_process_and_all_the_details_shared_by_me_are_correct"
             android:layout_marginHorizontal="10dp"
             android:gravity="top"
             android:textSize="13sp"
@@ -1381,7 +1381,7 @@
             android:layout_height="54dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="20dp"
-            android:text="Proceed"
+            android:text="@string/proceed"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

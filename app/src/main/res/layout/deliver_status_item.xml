@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/price"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="Track"
+            android:text="@string/track"
             android:textSize="@dimen/text_16"
             android:layout_marginEnd="@dimen/dimen_18"
             android:textColor="@color/button_blue"

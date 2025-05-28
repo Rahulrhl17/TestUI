@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
     <include layout="@layout/header_layout"
         android:id="@+id/headerLayout"/>
     <androidx.core.widget.NestedScrollView
@@ -99,7 +100,7 @@
                                        style="@style/WorkSansMedium"
                                        android:layout_width="0dp"
                                        android:layout_height="wrap_content"
-                                       android:text="Buy live rate"
+                                       android:text="@string/buy_live_rate"
                                        android:textColor="@color/primary"
                                        android:textSize="@dimen/text_12"
                                        app:layout_constraintTop_toTopOf="parent"
@@ -111,7 +112,8 @@
                                        style="@style/WorkSansMedium"
                                        android:layout_width="0dp"
                                        android:layout_height="wrap_content"
-                                       android:text="₹ 6,232.86/gm"
+                                       tools:text="₹ 6,232.86/gm"
+                                       android:text="@string/gm"
                                        android:textColor="@color/text_colors"
                                        android:textSize="@dimen/text_12"
                                        app:layout_constraintTop_toBottomOf="@id/buyLiveRate"

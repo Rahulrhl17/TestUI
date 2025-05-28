@@ -31,7 +31,7 @@
             style="@style/WorkSansSemiBold"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:text="Welcome to Fino Payments bank"
+            android:text="@string/welcome_to_fino_payments_bank"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:text="Existing Customer? Login"
+                        android:text="@string/existing_customer_login"
                         android:textColor="@color/white"
                         style="@style/WorkSansSemiBold"
                         android:letterSpacing="-0.01"/>
@@ -106,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp"
-                        android:text="Start banking with us by login to FinoPay App."
+                        android:text="@string/start_banking_with_us_by_login_to_finopay_app"
                         android:textColor="@color/secondaryTextColor"
                         style="@style/WorkSansRegular"
                         />
@@ -171,7 +171,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
-                        android:text="New to Bank? Open an Account"
+                        android:text="@string/new_to_bank_open_an_account"
                         android:textColor="@color/white"
                         style="@style/WorkSansSemiBold"
                         android:letterSpacing="-0.01"/>
@@ -181,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
                         android:layout_marginTop="4dp"
-                        android:text="Instant account opening, earn while you spend, Personalized debit card &amp; so on."
+                        android:text="@string/instant_account_opening_earn_while_you_spend_personalized_debit_card_amp_so_on"
                         android:textColor="@color/secondaryTextColor"
                         style="@style/WorkSansRegular"
                         />

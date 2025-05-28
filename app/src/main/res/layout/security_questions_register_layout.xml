@@ -37,7 +37,7 @@
                     android:textSize="16sp"
                     android:textColor="@color/black"
                     style="@style/WorkSansSemiBold"
-                    android:text="Please answer any three of the questions listed below to set MPIN &amp; security questions." />
+                    android:text="@string/please_answer_any_three_of_the_questions_listed_below_to_set_mpin_amp_security_questions" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                     android:textColor="@color/gray2"
                     android:textSize="14sp"
                     android:visibility="visible"
-                    android:text="Enter PAN No"
+                    android:text="@string/enter_pan_no"
                     android:layout_marginTop="20dp"/>
 
                 <EditText
@@ -68,7 +68,7 @@
                     android:textColor="@color/gray2"
                     android:textSize="14sp"
                     android:visibility="visible"
-                    android:text="Enter Aadhaar No"
+                    android:text="@string/enter_aadhaar_no"
                     android:layout_marginTop="20dp"/>
 
                 <EditText
@@ -90,7 +90,7 @@
                     android:textColor="@color/gray2"
                     android:textSize="14sp"
                     android:visibility="visible"
-                    android:text="Enter mother's maiden name"
+                    android:text="@string/enter_mother_s_maiden_name"
                     android:layout_marginTop="20dp"/>
 
                 <EditText
@@ -112,7 +112,7 @@
                     android:textColor="@color/gray2"
                     android:textSize="14sp"
                     android:visibility="visible"
-                    android:text="Enter email ID"
+                    android:text="@string/enter_email_id"
                     android:layout_marginTop="20dp"/>
 
                 <EditText
@@ -134,7 +134,7 @@
                     android:textColor="@color/gray2"
                     android:textSize="14sp"
                     android:visibility="visible"
-                    android:text="Enter date of birth"
+                    android:text="@string/enter_date_of_birth"
                     android:layout_marginTop="20dp"/>
 
                 <EditText
@@ -156,7 +156,7 @@
                     android:textColor="@color/gray2"
                     android:textSize="14sp"
                     android:visibility="visible"
-                    android:text="Enter Customer ID"
+                    android:text="@string/enter_customer_id"
                     android:layout_marginTop="20dp"/>
 
                 <EditText
@@ -186,7 +186,7 @@
             android:layout_height="54dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginBottom="20dp"
-            android:text="Continue"
+            android:text="@string/_continue"
             android:textSize="18sp"
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"

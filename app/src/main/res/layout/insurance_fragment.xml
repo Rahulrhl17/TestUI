@@ -62,7 +62,7 @@
             style="@style/SolidButton"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dimen_44"
-            android:text="View Plans"
+            android:text="@string/view_plans"
             android:textSize="@dimen/text_16"
             android:layout_weight="1"
             app:layout_constraintTop_toBottomOf="@id/code"

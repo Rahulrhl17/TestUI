@@ -127,7 +127,7 @@
                         android:textColor="@color/text_colors"
                         android:textSize="14sp"
                         app:buttonTint="@color/primary"
-                        android:text="I agree to the Terms and Conditions"
+                        android:text="@string/i_agree_to_the_terms_and_conditions"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dimen_20"/>
 
@@ -169,7 +169,7 @@
                         android:id="@+id/bankName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="FinoPay Digital Savings Account"
+                        android:text="@string/finopay_digital_savings_account"
                         android:textSize="@dimen/text_12"
                         style="@style/WorkSansSemiBold"
                         app:layout_constraintTop_toTopOf="@id/finoIcon"

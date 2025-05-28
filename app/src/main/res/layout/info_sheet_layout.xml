@@ -21,7 +21,7 @@
         android:textSize="18sp"
         android:textColor="@color/black"
         style="@style/WorkSansSemiBold"
-        android:text="Info"/>
+        android:text="@string/info"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
         style="@style/WorkSansRegular"
         android:layout_marginHorizontal="20dp"
         android:textAlignment="center"
-        android:text="Dear Customer, if your communication address is different from permanent address, kindly visit our Merchant Point to open an account"/>
+        android:text="@string/info_communication_address_descr"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/info_button_primary"
@@ -42,7 +42,7 @@
         android:layout_height="54dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
-        android:text="Continue with permanent address"
+        android:text="@string/continue_with_permanent_address"
         android:textSize="16sp"
          />
 
@@ -54,7 +54,7 @@
         android:layout_marginHorizontal="20dp"
         android:textColor="@color/primary"
         android:textAppearance="@style/WorkSansSemiBold"
-        android:text="Locate nearest Merchant Point"
+        android:text="@string/locate_nearest_merchant_point"
         android:textSize="14sp"
         android:layout_marginBottom="10dp" />
 

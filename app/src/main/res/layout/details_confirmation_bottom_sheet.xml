@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@id/confirmDetailsText"
         android:layout_marginStart="@dimen/dimen_8"
         style="@style/WorkSansSemiBold"
-        android:text="Fino Payments Bank"
+        android:text="@string/fino_payments_bank"
         android:textSize="@dimen/text_14"
         android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@id/icon"

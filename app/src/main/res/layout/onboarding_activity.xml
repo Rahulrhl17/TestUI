@@ -74,7 +74,7 @@
                             android:layout_marginStart="4dp"
                             android:textSize="14sp"
                             android:visibility="gone"
-                            android:text="Validate your \nIdentity"/>
+                            android:text="@string/validate_your_identity"/>
 
 
 
@@ -123,7 +123,7 @@
                         android:layout_marginStart="4dp"
                         android:textSize="14sp"
                         android:visibility="visible"
-                        android:text="Add &amp; Review \n Details"/>
+                        android:text="@string/add_review_details"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -164,7 +164,7 @@
                         android:layout_marginStart="4dp"
                         android:textSize="14sp"
                         android:visibility="gone"
-                        android:text="Payment"/>
+                        android:text="@string/payment"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -203,7 +203,7 @@
                         android:layout_marginStart="4dp"
                         android:textSize="14sp"
                         android:visibility="gone"
-                        android:text="Video KYC"/>
+                        android:text="@string/video_kyc"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
