@@ -52,7 +52,7 @@ class SampleActivity : FinoPayActivity<ActivitySampleBinding>() {
         val request = VkycRequest(MethodId = 7004, RequestData =requestData)
         loginRegistrationViewModel.vkycServiceRequest(request)
 
-        loginRegistrationViewModel.securityResponse.observe(this, Observer { resource ->
+        loginRegistrationViewModel.apiResponse.observe(this, Observer { resource ->
             when (resource) {
                 is Resource.Success -> {
 
