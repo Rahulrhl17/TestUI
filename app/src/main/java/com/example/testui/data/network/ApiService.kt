@@ -14,6 +14,7 @@ import com.example.testui.models.BillPaymentRequest
 import com.example.testui.models.MasterRequest
 import com.example.testui.models.UtilityRequest
 import com.example.testui.models.RegistrationRequest
+import com.example.testui.models.SimBindingRequest
 import com.example.testui.models.VkycRequest
 import retrofit2.Response
 import retrofit2.http.Body
